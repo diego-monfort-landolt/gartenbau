@@ -36,7 +36,9 @@
   width: 80%;
   max-width: 350px;
 }
-
+h4 {
+  text-wrap: wrap;
+}
 .service-header {
   display: flex;
   align-items: center;
