@@ -17,14 +17,15 @@ const Services = () => (
       <div className="service">
         <div className="service-header">
           <FaTools size={40} />
-          <h3>GARTENBAU</h3>
+          <h3>Gartenbau</h3>
         </div>
         <p>Kreatives Design für deine Außenbereiche.</p>
       </div>
+
        <div className="service">
         <div className="service-header">
-          <FaHandsHelping size={40} />
-          <h3>NATURSTEINARBEITEN</h3>
+          <FaHandsHelping  size={40} />
+          <h3>Natursteinarbeiten</h3>
         </div>
         <p>Kreatives Design für deine Außenbereiche.</p>
       </div>

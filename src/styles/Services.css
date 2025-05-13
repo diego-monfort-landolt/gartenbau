@@ -30,6 +30,7 @@
   text-align: center;
   padding: 20px;
   border: 2px solid rgba(0, 128, 0, 0.3);
+  box-shadow: 0 2px 10px 1px rgba(128, 128, 128, 0.493);
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.8);
   width: 80%;
@@ -40,11 +41,18 @@
   display: flex;
   align-items: center;
   gap: 15px;
+  flex-wrap: nowrap; /* Verhindert Umbruch von Icon & Titel */
+  justify-content: center; /* Titel wird immer mittig ausgerichtet */
 }
 
 .service-header h3 {
   margin: 0;
   font-size: 22px;
+  flex: 1; /* Stellt sicher, dass der Titel immer innerhalb bleibt */
+  white-space: nowrap; /* Verhindert Zeilenumbruch */
+}
+.service p {
+  word-wrap: break-word; /* Falls langer Text, wird er umgebrochen */
 }
 
 @media (min-width: 768px) {
