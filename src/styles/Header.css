@@ -31,14 +31,38 @@
   border-radius: 10px;
   margin: 0 10px;
 }
+.overlay-text {
+  
+  border-top: 1px solid #eee;
+  text-align: center;
+}
 
 h1 {
   font-size: 3rem;
+  font-style: italic ;
   margin: 0;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+/* Größerer Header nur für Desktop */
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 120vh; /* Erhöhte Höhe für große Bildschirme */
+  }
+
+  .overlay {
+    padding: 40px; /* Größeres Padding für bessere Lesbarkeit */
+  }
+
+  h1 {
+    font-size: 4rem; /* Größere Schrift */
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
 }
 @media (max-width: 768px) {
   h1 {

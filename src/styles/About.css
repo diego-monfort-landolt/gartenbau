@@ -12,3 +12,14 @@
   font-size: 18px;
   color: #444;
 }
+
+/* Größere Schrift für Desktop-Ansicht */
+@media screen and (min-width: 768px) {
+  #about h2 {
+    font-size: 35px; /* Vergrößerte Schriftgröße für größere Bildschirme */
+  }
+
+  #about p {
+    font-size: 32px;
+  }
+}
