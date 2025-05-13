@@ -4,22 +4,55 @@ nav {
   left: 0;
   width: 100%;
   background: rgba(0, 128, 0, 0.9); /* Grüne Transparenz */
-  padding: 15px 0;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center; /* Vertikale Zentrierung */
+  justify-content: space-between; /* Logo bleibt links, Navigation zentriert */
   z-index: 1000;
+}
+
+.logo {
+  flex-shrink: 0; /* Verhindert, dass das Logo skaliert wird */
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  display: block; /* Verhindert unerwarteten Abstand */
 }
 
 nav ul {
   display: flex;
-  justify-content: center;
-}
-
-nav ul li {
   list-style: none;
-  margin: 0 15px;
+  gap: 20px;
+  flex-grow: 1; /* Stellt sicher, dass die Navigation sich ausdehnt */
+  justify-content: center; /* Zentriert die Navigation */
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 18px;
+}
+
+/* **RESPONSIV** */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row; /* Reihenfolge bleibt gleich */
+    align-items: center;
+  }
+
+  .logo {
+    width: auto;
+    padding-left: 15px;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  nav ul {
+    flex-wrap: wrap; /* Stellt sicher, dass die Links nicht überlappen */
+    justify-content: center;
+  }
 }

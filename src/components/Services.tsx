@@ -1,10 +1,10 @@
-import { FaLeaf, FaHammer, FaHandsHelping, FaPhone } from "react-icons/fa";
+import { FaLeaf, FaHammer, FaHandsHelping } from "react-icons/fa";
 import "../styles/Services.css";
 
 const Services = () => (
   
-  <section id="services" className="services">
-    <h2 className="services-title">Unsere Dienstleistungen</h2> {/* Titel zentrieren */}
+  <section id="Dienstleistungen" className="services">
+    <h2 className="services-title">Unsere Dienstleistungen</h2>
     <div className="services-container">
       <div className="service">
         <div className="service-header">
@@ -30,13 +30,7 @@ const Services = () => (
         <p>Kreatives Design für deine Außenbereiche.</p>
       </div>
 
-      <div className="service">
-        <div className="service-header">
-          <FaPhone size={40} />
-          <h4>Kontakt</h4>
-        </div>
-        <p>Erreiche uns schnell und einfach!</p>
-      </div>
+      
     </div>
   </section>
 );

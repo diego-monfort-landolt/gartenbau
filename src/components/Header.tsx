@@ -1,21 +1,10 @@
-import Typewriter from "typewriter-effect";
 import "../styles/Header.css";
 
 const Header = () => (
   <header id='home' className="header">
     <div className="overlay">
-      <h1>Willkommen bei Garten Design</h1>
-      <h2>
-         <Typewriter
-          options={{
-            strings: ["Gartenpflege & kreative Gestaltung", "Natürliche Schönheit für dein Zuhause"],
-            autoStart: true,
-            loop: true,
-            delay: 50,
-          }}
-        />
-      </h2>
-      
+      <h1>Willkommen bei J. Landolt</h1>
+      <h2>Gartenbau & Gartenpflege</h2>
     </div>
   </header>
 );
