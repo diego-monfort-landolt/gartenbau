@@ -1,0 +1,85 @@
+.gallery {
+  text-align: center;
+  padding: 50px 20px;
+  min-height: 60vh;
+  background-image: url("https://cdn.pixabay.com/photo/2018/06/28/21/07/rose-3504803_640.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.gallery::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.gallery-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.gallery-box {
+  max-width: 1200px;
+  margin: 120px auto 0; /* <-- Auto auf beiden Seiten für Zentrierung */
+  display: flex;
+  justify-content: center; /* Inhalt horizontal zentrieren */
+}
+
+
+/* Slick Carousel Styling */
+.slick-slider {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+
+.slick-slide {
+  text-align: center;
+}
+
+.slick-slide div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item {
+  width: 100%;
+  max-width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .gallery-item {
+    max-width: 250px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    max-width: 200px;
+    height: 150px;
+  }
+}
