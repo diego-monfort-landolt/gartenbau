@@ -20,9 +20,6 @@
   object-fit: cover;
   z-index: -1;
 }
-
-
-
 .overlay {
   position: absolute;
   color: white;
