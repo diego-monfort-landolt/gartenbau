@@ -14,6 +14,7 @@ const Contact = () => (
       <textarea name="message" placeholder="Ihre Nachricht" rows={5} required />
       <input type="text" name="_formsubmit_id" style={{ display: "none" }} />
       <button type="submit">Nachricht senden</button>
+      <input type="hidden" name="_next" value="https://diego-monfort-landolt.github.io/gartenbau/"></input>
     </form>
 
     {/* Icons und Kontaktinformationen jetzt UNTER dem Formular */}
