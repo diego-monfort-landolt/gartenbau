@@ -9,48 +9,29 @@
   position: relative;
 }
 
-.gallery::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
-
 .gallery-title {
   font-size: 32px;
   font-weight: bold;
   color: white;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   margin-bottom: 30px;
-  text-align: center;
 }
 
 .gallery-box {
-  max-width: 1200px;
-  margin: 120px auto 0; /* <-- Auto auf beiden Seiten für Zentrierung */
-  display: flex;
-  justify-content: center; /* Inhalt horizontal zentrieren */
-}
-
-
-/* Slick Carousel Styling */
-.slick-slider {
+  max-width: 800px;
   margin: 0 auto;
-  padding: 0 20px;
-  width: 100%;
-  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Bilder - Jetzt mittig ausgerichtet */
+.slick-slider {
+  max-width: 600px;
+  margin: auto;
+}
 
 .slick-slide {
-  text-align: center;
-}
-
-.slick-slide div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,28 +39,75 @@
 
 .gallery-item {
   width: 100%;
-  max-width: 350px;
-  height: 250px;
+  max-width: 600px;
+  height: 400px;
   object-fit: cover;
-  border-radius: 30px;
-  transition: transform 0.3s ease-in-out;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+
+   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.gallery-item:hover {
-  transform: scale(1.05);
+/* Lightbox-Effekt für große Ansicht */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column;
 }
 
-/* Responsive Breakpoints */
+/* Bild innerhalb der Lightbox */
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+/* Schließen-Button */
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  color: white;
+  font-size: 32px;
+  border: none;
+  cursor: pointer;
+}
+
+.lightbox-close:hover {
+  color: #ff0000;
+}
+
+/* Responsive Optimierung */
 @media (max-width: 1024px) {
   .gallery-item {
-    max-width: 250px;
-    height: 200px;
+    max-width: 500px;
+    height: 350px;
   }
 }
 
 @media (max-width: 768px) {
+  .gallery-item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
   .gallery-item {
-    max-width: 200px;
-    height: 150px;
+    max-width: 400px;
+    height: 300px;
+    margin: auto; /* Sorgt dafür, dass Bilder mittig bleiben */
   }
 }

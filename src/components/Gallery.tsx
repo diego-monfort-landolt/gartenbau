@@ -1,15 +1,15 @@
 import "../styles/Gallery.css";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css"; 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-import Foto1 from '../assets/img/gartenplatten-wiese.png'
-import Foto2 from '../assets/img/J. Landolt Gartenbau GmbH,gartenweg.png'
-import Foto3 from '../assets/img/schönerplattenboden.png'
-import Foto4 from '../assets/img/kleinemauer.png'
-import Foto5 from '../assets/img/J. Landolt Gartenbau GmbH.png'
-import Foto6 from '../assets/img/garten-j-landolt.png'
-
+import Foto1 from '../assets/img/gartenplatten-wiese.png';
+import Foto2 from '../assets/img/J. Landolt Gartenbau GmbH,gartenweg.png';
+import Foto3 from '../assets/img/schönerplattenboden.png';
+import Foto4 from '../assets/img/kleinemauer.png';
+import Foto5 from '../assets/img/J.LandoltGartenbauGmbH.png';
+import Foto6 from '../assets/img/garten-j-landolt.png';
+import { useState } from "react";
 
 const images = [
   Foto1,
@@ -23,55 +23,43 @@ const images = [
 ];
 
 const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
- const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        centerMode: true
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        centerMode: true
-      }
-    }
-  ]
-};
-
-
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000
+  };
 
   return (
-   
-    
- <section className="gallery">
+    <section className="gallery">
       <h2 className="gallery-title">Galerie</h2>
       <div className="gallery-box">
-         <Slider {...settings}>
-        {images.map((src, index) => (
-          <div key={index}>
-            <img src={src} alt="Gartenbild" className="gallery-item" />
-          </div>
-        ))}
-      </Slider>
+        <Slider {...settings}>
+          {images.map((src, index) => (
+            <div key={index} className="gallery-item-container">
+              <img
+                src={src}
+                alt="Gartenbild"
+                className="gallery-item"
+                onClick={() => setSelectedImage(src)}
+              />
+            </div>
+          ))}
+        </Slider>
       </div>
-     
-    </section>
 
-    
-    
-    
+      {selectedImage && (
+        <div className="lightbox">
+          <button className="lightbox-close" onClick={() => setSelectedImage(null)}>✖</button>
+          <img src={selectedImage} alt="Vergrößertes Bild" />
+        </div>
+      )}
+    </section>
   );
 };
 
