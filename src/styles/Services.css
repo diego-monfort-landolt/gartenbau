@@ -134,8 +134,7 @@ h4 {
   .service {
     width: 30%;
   }
-  .modal-overlay {
-    align-items: flex-start;
-    padding-top: 100px;
+   .modal-overlay {
+    padding-top: 140px;
   }
 }
