@@ -2,7 +2,10 @@ import "../styles/About.css";
 
 const About = () => (
   <section id="about">
-    <h2>Willkommen bei J. Landolt Gartenbau GmbH – Ihr Partner für kreative Gartengestaltung</h2>
+    <div className="about-title">
+     <h2><b>J. Landolt Gartenbau GmbH</b> <br /> 
+    Ihr Gärtner für kreative Gartengestaltung</h2> 
+    </div>
     <p>Die J. Landolt Gartenbau GmbH wurde im Jahr 2015 gegründet – mit dem Ziel, aus der Leidenschaft für Natur und Garten eine berufliche Mission zu machen. Seitdem stehen wir für professionellen Gartenbau, individuelle Beratung und hochwertige Ausführung – alles aus einer Hand.</p>
 
     <h2>Individuelle Gartenplanung mit persönlicher Beratung</h2>

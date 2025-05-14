@@ -1,6 +1,10 @@
 #about {
-  padding: 50px;
+  padding: 30px;
   text-align: center;
+}
+.about-title {
+  position: relative;
+  top: -40px;
 }
 
 #about h2 {
@@ -14,9 +18,17 @@
 }
 
 /* Größere Schrift für Desktop-Ansicht */
+@media screen and (min-width: 1024px) {
+  .about-title {
+    top: -50px;
+  }
+}
 @media screen and (min-width: 768px) {
   #about h2 {
     font-size: 35px; /* Vergrößerte Schriftgröße für größere Bildschirme */
+  }
+  .about-title {
+    top: -30px;
   }
 
   #about p {
