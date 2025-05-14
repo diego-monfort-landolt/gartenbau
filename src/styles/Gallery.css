@@ -1,65 +1,42 @@
+/* Galerie Styling */
 .gallery {
   text-align: center;
   padding: 50px 20px;
-  min-height: 60vh;
-  background-image: url("https://cdn.pixabay.com/photo/2018/06/28/21/07/rose-3504803_640.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  position: relative;
+  background: #f8f8f8;
 }
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: green;
-  z-index: 999;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
+
 .gallery-title {
   font-size: 32px;
   font-weight: bold;
-  color: white;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  color: #333;
   margin-bottom: 30px;
 }
 
-.gallery-box {
-  max-width: 800px;
+/* Grid für moderne Darstellung */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-/* Bilder - Jetzt mittig ausgerichtet */
-.slick-slider {
-  max-width: 600px;
-  margin: auto;
-}
-
-.slick-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.gallery-item {
+.gallery-item img {
   width: 100%;
-  max-width: 600px;
-  height: 400px;
+  height: 250px;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   cursor: pointer;
-  margin:  auto;
 }
 
-/* Lightbox-Effekt für große Ansicht */
+/* Hover Effekt */
+.gallery-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Lightbox für große Bildanzeige */
 .lightbox {
   position: fixed;
   top: 0;
@@ -75,62 +52,38 @@
   padding: 20px;
 }
 
-/* Bild innerhalb der Lightbox */
 .lightbox img {
   max-width: 90%;
   max-height: 90%;
   border-radius: 10px;
+  object-fit: contain;
 }
 
 /* Schließen-Button */
 .lightbox-close {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  background: transparent;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.3);
   color: white;
-  font-size: 32px;
+  font-size: 28px;
   border: none;
+  padding: 10px;
   cursor: pointer;
+  border-radius: 50%;
 }
 
 .lightbox-close:hover {
-  color: #ff0000;
+  background: rgba(255, 0, 0, 0.7);
 }
 
-/* Responsive Optimierung */
-@media (max-width: 1024px) {
-  .gallery-item {
-    max-width: 500px;
-    height: 350px;
-  }
-}
-
+/* ✅ Mobile Optimierung */
 @media (max-width: 768px) {
-  .gallery-item-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
-  .gallery-item {
-    max-width: 400px;
-    height: 300px;
-    margin: auto; /* Sorgt dafür, dass Bilder mittig bleiben */
-  }
-}
-@media (max-width: 670px) {
-  .gallery-item-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .gallery-item {
-    max-width: 300px;
+  .gallery-item img {
     height: 200px;
-    margin: auto; /* Sorgt dafür, dass Bilder mittig bleiben */
   }
 }
