@@ -4,7 +4,10 @@ import "../styles/Contact.css";
 const Contact = () => (
   <section id="contact" className="contact">
     <h2>Kontakt</h2>
-
+<div className="description-k">
+  <p>Bei Fragen bin ich gerne via Telefon oder via E-Mail für Sie erreichbar.
+        <b> 076 419 75 08</b></p>
+</div>
     <form
       className="contact-form"
       action="https://formsubmit.co/landoltdiego@gmail.com" method="POST" 
@@ -21,15 +24,15 @@ const Contact = () => (
     {/* Icons und Kontaktinformationen jetzt UNTER dem Formular */}
     <div className="contact-info">
       <div className="contact-item">
-        <FaPhone size={30} />
+        <FaPhone size={20} />
         <p>076 419 75 08</p>
       </div>
       <div className="contact-item">
-        <FaEnvelope size={30} />
+        <FaEnvelope size={20} />
         <p>jorgelandolt@hotmail.com</p>
       </div>
       <div className="contact-item">
-        <FaMapMarkerAlt size={30} />
+        <FaMapMarkerAlt size={20} />
         <p>J. Landolt Gartenbau GmbH</p>
       </div>
     </div>

@@ -16,6 +16,9 @@
 #about p {
   font-size: 18px;
   color: #444;
+  max-width: 800px; /* Setzt eine maximale Breite für den Text */
+  margin: 0 auto; /* Zentriert den Text */
+  text-align: center;
 }
 
 /* Container für das Bild */
@@ -45,6 +48,7 @@
 
   #about p {
     font-size: 20px;
+    max-width: 750px; /
   }
 }
 
