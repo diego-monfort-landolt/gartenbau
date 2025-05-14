@@ -11,7 +11,7 @@ import Foto6 from '../assets/img/garten-j-landolt.png';
 const images = [Foto1, Foto2, Foto3, Foto4, Foto5, Foto6];
 
 const Gallery = () => {
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
     <section className="gallery">
