@@ -7,14 +7,13 @@ const Contact = () => (
 
     <form
       className="contact-form"
-      action="https://formsubmit.io/send/test@test.com" // ❗️Deine E-Mail
-      method="POST"
+      action="https://formsubmit.co/landoltdiego@gmail.com" method="POST" 
     >
       <input type="text" name="name" placeholder="Ihr Name" required />
       <input type="email" name="email" placeholder="Ihre E-Mail" required />
       <textarea name="message" placeholder="Ihre Nachricht" rows={5} required />
       <input type="text" name="_formsubmit_id" style={{ display: "none" }} />
-      <button disabled type="submit">Nachricht senden</button>
+      <button type="submit">Nachricht senden</button>
     </form>
 
     {/* Icons und Kontaktinformationen jetzt UNTER dem Formular */}
