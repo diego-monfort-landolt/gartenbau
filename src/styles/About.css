@@ -21,15 +21,18 @@
 /* Container für das Bild */
 .about-image-container {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .about-image {
   width: 100%;
-  height: auto;
-  border-radius: 10px; /* Für abgerundete Ecken */
+  max-width: 650px; /* Max. Breite auf Desktop */
+  height: 650px;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover; /* Für sauberes Zuschneiden */
 }
-
 /* Größere Schrift für Desktop-Ansicht */
 @media screen and (min-width: 1024px) {
   .about-title {
