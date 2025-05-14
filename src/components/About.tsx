@@ -1,4 +1,5 @@
 import "../styles/About.css";
+import profielfoto from '../assets/img/Jorge Landolt - Ihr Gartenbauer in Bülach, Kloten & Rümlang.png'
 
 const About = () => (
   <section id="about">
@@ -10,7 +11,9 @@ const About = () => (
 
     <h2>Individuelle Gartenplanung mit persönlicher Beratung</h2>
     <p>Ob moderne Gartenanlage, naturnahe Umgestaltung oder einfache Gartenpflege: Wir nehmen uns Zeit für Ihre Wünsche und entwickeln gemeinsam mit Ihnen ein individuelles Konzept für Ihren Traumgarten. Unsere persönliche Beratung ist die Basis jeder erfolgreichen Gartengestaltung – denn jeder Garten ist so einzigartig wie seine Besitzer.</p>
-
+      <div className="about-image-container">
+      <img src={profielfoto} alt="Gartenbau" className="about-image" />
+    </div>
     <h2>Fachkompetenz und Erfahrung im Gartenbau</h2>
     <p>Mit langjähriger Erfahrung, fachlicher Qualifikation und viel Leidenschaft betreuen wir Projekte in allen Bereichen des Gartenbaus. Von der regelmäßigen Gartenpflege bis zur kompletten Neugestaltung Ihrer Grünflächen – auf unser Team können Sie sich verlassen.
 

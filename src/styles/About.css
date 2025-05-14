@@ -2,6 +2,7 @@
   padding: 30px;
   text-align: center;
 }
+
 .about-title {
   position: relative;
   top: -40px;
@@ -17,12 +18,34 @@
   color: #444;
 }
 
+/* Container für das Bild */
+.about-image-container {
+  margin-top: 20px;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Für abgerundete Ecken */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Größere Schrift für Desktop-Ansicht */
 @media screen and (min-width: 1024px) {
   .about-title {
     top: -50px;
   }
+
+  #about h2 {
+    font-size: 35px;
+  }
+
+  #about p {
+    font-size: 20px;
+  }
 }
+
+/* Responsive Design für Tablets und Mobilgeräte */
 @media screen and (min-width: 768px) {
   #about h2 {
     font-size: 35px; /* Vergrößerte Schriftgröße für größere Bildschirme */
@@ -32,6 +55,6 @@
   }
 
   #about p {
-    font-size: 32px;
+    font-size: 22px;
   }
 }
