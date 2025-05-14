@@ -32,6 +32,7 @@ const Gallery = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    center: true,
     autoplaySpeed: 3000
   };
 
@@ -54,7 +55,7 @@ const Gallery = () => {
       </div>
 
       {selectedImage && (
-        <div className="lightbox">
+         <div className="lightbox">
           <button className="lightbox-close" onClick={() => setSelectedImage(null)}>✖</button>
           <img src={selectedImage} alt="Vergrößertes Bild" />
         </div>

@@ -64,6 +64,7 @@
   align-items: center;
   z-index: 1000;
   flex-direction: column;
+  padding: 20px;
 }
 
 /* Bild innerhalb der Lightbox */
