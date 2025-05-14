@@ -1,5 +1,5 @@
-import { useState } from "react";
-import "../styles/Gallery.css";
+import Gallery from 'react-image-gallery';
+import 'react-image-gallery/styles/css/image-gallery.css';
 
 import Foto1 from '../assets/img/gartenplatten-wiese.png';
 import Foto2 from '../assets/img/J. Landolt Gartenbau GmbH,gartenweg.png';
@@ -8,30 +8,31 @@ import Foto4 from '../assets/img/kleinemauer.png';
 import Foto5 from '../assets/img/J.LandoltGartenbauGmbH.png';
 import Foto6 from '../assets/img/garten-j-landolt.png';
 
-const images = [Foto1, Foto2, Foto3, Foto4, Foto5, Foto6];
+const images = [
+  { original: Foto1, thumbnail: Foto1, description: 'Gartenplatten auf Wiese' },
+  { original: Foto2, thumbnail: Foto2, description: 'Gartenweg von J. Landolt' },
+  { original: Foto3, thumbnail: Foto3, description: 'Schöner Plattenboden' },
+  { original: Foto4, thumbnail: Foto4, description: 'Kleine Mauer' },
+  { original: Foto5, thumbnail: Foto5, description: 'J. Landolt Gartenbau GmbH' },
+  { original: Foto6, thumbnail: Foto6, description: 'Garten von J. Landolt' },
+];
 
-const Gallery = () => {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
-
+const GalleryComponent: React.FC = () => {
   return (
     <section className="gallery">
       <h2 className="gallery-title">Galerie</h2>
-      <div className="gallery-grid">
-        {images.map((src, index) => (
-          <div key={index} className="gallery-item">
-            <img src={src} alt={`Bild ${index + 1}`} onClick={() => setSelectedImage(src)} />
-          </div>
-        ))}
-      </div>
+      <Gallery
+        items={images}
+        showThumbnails={false}
+        showPlayButton={false}
+        showFullscreenButton={false}
+        showNav={true}
+        autoPlay={true}
+        slideInterval={4000}
+        />
 
-      {selectedImage && (
-        <div className="lightbox" onClick={() => setSelectedImage(null)}>
-          <button className="lightbox-close">✖</button>
-          <img src={selectedImage} alt="Vergrößertes Bild" />
-        </div>
-      )}
     </section>
   );
 };
 
-export default Gallery;
+export default GalleryComponent;
