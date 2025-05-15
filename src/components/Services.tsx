@@ -14,28 +14,29 @@ const modalData: Record<
   { title: string; text: string; image: string; textBelowImage: string }
 > = {
   gartenpflege: {
-    title: "Gartenpflege im Detail",
-    text: `Unsere Gartenpflege umfasst regelmäßiges Mähen, Hecken- und
-    Baumschnitt sowie die Pflege von Blumenbeeten und Rasenflächen. Wir sorgen
-    dafür, dass Ihr Garten das ganze Jahr über gepflegt aussieht.`,
+    title: "Langfristige Gartenpflege für dauerhafte Schönheit",
+    text: `Ein Garten ist ein lebendiger Raum – er wächst, verändert sich und entwickelt sich stetig weiter. Damit er dauerhaft gepflegt und ansprechend bleibt, ist eine kontinuierliche und fachkundige Betreuung unerlässlich.
+
+    Bei J. Landolt Gartenbau GmbH bieten wir Ihnen eine umfassende und zuverlässige Gartenpflege, die den langfristigen Werterhalt Ihrer Grünflächen sicherstellt. Ob Rasen, Hecken, Sträucher oder Beete – wir kümmern uns mit Sorgfalt, Fachwissen und jahrelanger Erfahrung um jede Ecke Ihres Gartens.`,
     image: Bild1,
-    textBelowImage: `Auch die fachgerechte Entsorgung des Grünschnitts und die nachhaltige Pflege stehen bei uns im Fokus.`,
+    textBelowImage: `Jorge Landolt betreut sowohl kleine Privatgärten als auch großzügige Anlagen – individuell abgestimmt auf Ihre Wünsche und die Bedürfnisse der Pflanzen. Denn nur durch regelmässige Pflege bleibt Ihr Garten gesund, blühend und einladend – das ganze Jahr über.`,
   },
   gartenbau: {
-    title: "Gartenbau im Detail",
-    text: `Unser Gartenbau bietet individuelle Gestaltung von Wegen, Plätzen,
-    Beeten und Terrassen. Wir kombinieren Kreativität mit Funktionalität, um
-    deinen Gartentraum Wirklichkeit werden zu lassen.`,
+    title: "Gartenbau mit Leidenschaft und Kompetenz",
+    text: `Ob Neugestaltung eines Gartens oder gezielte Umänderung bestehender Gartenflächen – bei J. Landolt Gartenbau GmbH erhalten Sie kreative Gartenideen und individuelle Lösungen, die perfekt auf Ihre Wünsche abgestimmt sind.
+
+    Gemeinsam mit Ihnen entwickeln wir ein maßgeschneidertes Gartenkonzept – mit einem sicheren Gespür für Ästhetik, Funktionalität und Pflanzenvielfalt. Ihre persönliche Ansprechperson begleitet Sie durch jede Phase des Projekts – von der Beratung über die Planung bis hin zur fachgerechten Umsetzung vor Ort.`,
     image: Bild2,
-    textBelowImage: `Mit modernen Materialien und bewährter Handwerkskunst schaffen wir dauerhafte Qualität.`,
+    textBelowImage: `Als erfahrenes Unternehmen im Bereich Gartenbau in der Schweiz stehen wir für Qualität, Zuverlässigkeit und persönliche Betreuung. Vertrauen Sie auf unsere Expertise, um Ihren Traumgarten Wirklichkeit werden zu lassen.`,
   },
   naturstein: {
-    title: "Natursteinarbeiten im Detail",
-    text: `Naturstein verleiht jedem Garten Charakter. Ob Mauern, Wege oder
-    Treppen – wir gestalten mit hochwertigen Materialien langlebige und
-    ästhetische Elemente.`,
+    title: "Natürliche Eleganz mit Naturstein im Garten",
+    text: `Möchten Sie Ihrem Garten einen stilvollen und zeitlosen Charakter verleihen?
+    Naturstein ist die ideale Wahl – vielseitig in Farbe, Struktur und Verarbeitung und dabei besonders langlebig. Jeder Stein ist ein Unikat und schafft eine einzigartige, natürliche Atmosphäre in Ihrem Aussenbereich.
+
+    Ob Gartenwege, Mauern, Sitzplätze oder dekorative Elemente – wir unterstützen Sie von der ersten Beratung bis zur professionellen Umsetzung Ihres Projekts. Gemeinsam planen wir den Einsatz von Natursteinen, die perfekt zu Ihrem Garten und Ihren Vorstellungen passen.`,
     image: Bild3,
-    textBelowImage: `Jede Steinstruktur ist einzigartig – genau wie dein Garten.`,
+    textBelowImage: `J. Landolt Gartenbau GmbH ist Ihr zuverlässiger Partner für Natursteinarbeiten in Bülach und Umgebung. Vertrauen Sie auf unsere Erfahrung, um stilvolle Akzente mit Naturmaterialien zu setzen.`,
   },
 };
 
