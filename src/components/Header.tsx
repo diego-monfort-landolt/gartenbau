@@ -8,7 +8,7 @@ const Header = () => (
       <h1>J. Landolt Gartenbau GmbH</h1>
       <div className="overlay-text">
         <h2>Gartenbau & Gartenpflege</h2>
-        <p><FaMapMarkerAlt style={{ marginRight: '5px', transform: 'rotate(-15deg)' }} /> Bülach, Kloten & Rümlang</p>
+        <p><FaMapMarkerAlt style={{ marginRight: '5px', transform: 'rotate(-15deg)' }} />Bülach | Kloten | Rümlang</p>
       </div>
     </div>
   </header>
