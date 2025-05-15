@@ -1,11 +1,8 @@
 import "../styles/Navbar.css";
-// import foto1 from '../assets/img/Logo-jorgelandolt.svg'
-
+import Logo from '../assets/img/gartenbaubuelach-jorgelandolt.png'
 const Navbar = () => (
   <nav>
-    {/* <div className="logo">
-      <img src={foto1} alt="Jorge Landolt -logo - gartenbau bülach, Kloten und Zürich" />
-    </div> */}
+      <img src={Logo} alt="J. Landolt Gartenbau GmbH Logo" className="logo" />
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#Dienstleistungen">Dienstleistungen</a></li>

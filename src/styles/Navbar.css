@@ -12,13 +12,20 @@ nav {
 }
 
 .logo {
-  flex-shrink: 0; /* Verhindert, dass das Logo skaliert wird */
+  position: absolute;
+  top: 20px;
+  left: 20px; /* Abstand zum linken Rand */
+  width: 50px; /* Größe anpassen */
+  height: 50px;
+  border-radius: 50%; /* Runde Ecken */
+  overflow: hidden; /* Falls das Bild größer ist */
 }
 
 .logo img {
-  height: 50px;
-  width: auto;
-  display: block; /* Verhindert unerwarteten Abstand */
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; /* Sorgt für eine saubere Skalierung */
 }
 
 nav ul {
@@ -37,6 +44,13 @@ nav ul li a {
 
 /* **RESPONSIV** */
 @media (max-width: 768px) {
+   .logo {
+    width: 50px; /* Kleinere Größe für mobile Geräte */
+    height: 50px;
+    top: 10px;
+    left: 10px;
+    padding: 5px;
+  }
   nav {
     flex-direction: row; /* Reihenfolge bleibt gleich */
     align-items: center;
