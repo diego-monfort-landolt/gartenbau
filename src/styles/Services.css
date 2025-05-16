@@ -7,12 +7,13 @@
   padding: 50px 20px;
   max-width: 1200px;
   margin: auto;
+
 }
 
 .services-title {
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 20px; /* Abstand zwischen Titel und Boxen */
+   /* Abstand zwischen Titel und Boxen */
 }
 
 .services-container {
@@ -21,6 +22,7 @@
   justify-content: center;
   gap: 30px;
   padding: 20px;
+  
 }
 
 .service {
@@ -63,34 +65,35 @@ h4 {
   margin-top: 10px;
   display: inline-block;
 }
-
 .modal-overlay {
   position: fixed;
-  top: 60px; /* Abstand unter der grünen Navbar */
+  top: 0;
   left: 0;
-  width: 100%;
-  height: calc(100% - 60px); /* Verhindert Überlappung mit Navbar */
+  width: 100vw;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Muss höher als die Navbar sein */
-  padding: 20px;
+  z-index: 1000;
+  padding: 20px; /* sorgt für Abstand zum Rand */
   box-sizing: border-box;
 }
+
 .modal-content {
   background: white;
-  margin: 10px;
-
-  padding: 30px;
-  border-radius: 10px;
-  max-width: 700px;
+  padding: 25px;
+  border-radius: 15px;
   width: 100%;
-  max-height: 90vh;
+  max-width: 600px;
+  max-height: 80vh;
   overflow-y: auto;
   text-align: left;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
+
 
 .modal-content h2 {
   margin-top: 0;
@@ -130,11 +133,16 @@ h4 {
     justify-content: center;
   }
 
-  .service {
+    .service {
     width: 30%;
+    margin-bottom: 40px; /* Fügt extra Abstand unter jedem Service hinzu */
   }
    .modal-overlay {
     padding-top: 140px;
+  }
+   .modal-content {
+    max-width: 90%;
+    padding: 20px;
   }
 }
 
