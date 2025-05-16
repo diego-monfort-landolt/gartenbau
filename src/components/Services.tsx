@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaLeaf } from "react-icons/fa";
-import { GiStoneBlock  } from "react-icons/gi";
-import { TbShovelPitchforks } from "react-icons/tb";
+import { GiStonePath  } from "react-icons/gi";
+import { MdConstruction  } from "react-icons/md";
 import "../styles/Services.css";
 
 // Bilder importieren
@@ -82,7 +82,7 @@ const Services = () => {
 
           <div className="service">
             <div className="service-header">
-              <TbShovelPitchforks  size={30} color="green" />
+              <MdConstruction   size={30} color="green" />
               <h4>Gartenbau</h4>
             </div>
             <p>Kreatives Design für deine Außenbereiche.</p>
@@ -93,7 +93,7 @@ const Services = () => {
 
           <div className="service">
             <div className="service-header">
-              <GiStoneBlock   size={30} color="gray" />
+              <GiStonePath   size={30} color="black" />
               <h4>Natursteinarbeiten</h4>
             </div>
             <p>Robuste und stilvolle Gestaltung mit Naturmaterialien.</p>
