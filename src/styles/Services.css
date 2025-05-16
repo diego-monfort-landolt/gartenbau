@@ -62,10 +62,17 @@ h4 {
   color: #007bff;
   text-decoration: underline;
   cursor: pointer;
-  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  bottom: 10px;
+  left: 50%;
+  width: 100%;
+  
+}
+.info-link:hover {
+  color: blue;
+  font-size: 15px;
 }
 .modal-overlay {
   position: fixed;

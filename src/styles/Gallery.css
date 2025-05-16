@@ -2,10 +2,10 @@
 .gallery {
   text-align: center;
   padding: 50px 20px;
-  background-color: #8a8585; /* Hellgrauer Hintergrund */
-  max-width: 1200px;
+  background-color: #fffbfb; /* Hellgrauer Hintergrund */
+  width: 100%;
   margin: 0 auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.377);
+ 
 }
 
 /* Titel Styling */
@@ -13,24 +13,21 @@
   font-size: 32px;
   font-weight: bold;
   color: #333;
-  margin-bottom: 20px;
 }
 
 /* Für die Bilder in der Galerie */
 .gallery .image-gallery-slide img {
-  width: 90%; /* Sicherstellen, dass die Bilder den gesamten Container ausfüllen */
-  height: 200px; /* Kleinere fixierte Höhe für alle Bilder */
-  object-fit: cover; /* Bilder werden ohne Verzerrung in das Container-Verhältnis eingefügt */
+  width: 100%;
+  height: auto;
+  max-height: 350px; /* Einheitliche Größe ohne Verzerrung */
+  object-fit: cover;
   border-radius: 10px;
+  background-color: white;
 }
-
 /* Responsive Anpassungen */
-
-/* Tablet-Ansicht: 2 Bilder nebeneinander */
 @media (max-width: 1024px) {
   .gallery .react-image-gallery {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    max-height: 350px;
   }
 
   /* Bilderhöhe für Tablets */
@@ -41,13 +38,11 @@
 
 /* Mobile-Ansicht: 1 Bild pro Zeile */
 @media (max-width: 768px) {
-  .gallery .react-image-gallery {
-    grid-template-columns: 1fr;
-    gap: 10px;
+   .gallery .image-gallery-slide img {
+    max-height: 300px;
   }
-
   /* Bilderhöhe für Mobile */
   .gallery .image-gallery-slide img {
-    height: 150px; /* Kleinere Höhe für Mobilgeräte */
+    max-height: 250px;
   }
 }

@@ -2,7 +2,6 @@ import "../styles/Header.css";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa"
 
-
 const Header = () => (
   <header id='home' className="header">
     <div className="overlay">
