@@ -68,11 +68,10 @@ h4 {
   bottom: 10px;
   left: 50%;
   width: 100%;
-  
+   transition: color 0.2s;
 }
 .info-link:hover {
   color: blue;
-  font-size: 15px;
 }
 .modal-overlay {
   position: fixed;
