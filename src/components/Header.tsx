@@ -10,7 +10,7 @@ const Header = () => (
       <div className="overlay-text">
         <h2>Gartenbau & Gartenpflege</h2>
          <a
-            href="https://wa.me/41791234567"
+            href="https://wa.me/41764197508"
             target="_blank"
             rel="noopener noreferrer"
             className="whatsapp-button"
