@@ -5,8 +5,7 @@ const Contact = () => (
   <section id="contact" className="contact">
     <h2>Kontakt</h2>
 <div className="description-k">
-  <p>Bei Fragen bin ich gerne via Telefon oder via E-Mail für Sie erreichbar.
-        <b> 076 419 75 08</b></p>
+  <p>Kontaktieren Sie unns, wir freuen uns auf Sie und Ihren Garten!</p>
 </div>
     <form
       className="contact-form"
