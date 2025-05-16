@@ -140,7 +140,7 @@ h4 {
   }
 
   .service {
-    width: 30%;
+    width: 90%;
     margin-bottom: 40px; /* Fügt extra Abstand unter jedem Service hinzu */
   }
    .modal-overlay {
@@ -151,5 +151,13 @@ h4 {
     padding: 20px;
   }
 }
+@media (max-width: 480px) {
+  .services {
+    padding: 20px 5px; /* Noch kompakter für sehr kleine Displays */
+  }
 
+  .service {
+    width: 95%; /* Nutzt fast die gesamte Bildschirmbreite */
+  }
+}
 
