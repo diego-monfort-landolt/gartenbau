@@ -71,7 +71,7 @@ const Services = () => {
         <div className="services-container">
           <div className="service">
             <div className="service-header">
-              <FaLeaf size={30} color="green" />
+              <FaLeaf size={30} color="black" />
               <h4>Gartenpflege</h4>
             </div>
             <p>Wir halten deinen Garten gesund und schön.</p>
@@ -82,7 +82,7 @@ const Services = () => {
 
           <div className="service">
             <div className="service-header">
-              <MdConstruction   size={30} color="green" />
+              <MdConstruction  size={30} color="black" />
               <h4>Gartenbau</h4>
             </div>
             <p>Kreatives Design für deine Außenbereiche.</p>
@@ -93,7 +93,7 @@ const Services = () => {
 
           <div className="service">
             <div className="service-header">
-              <GiStonePath   size={30} color="black" />
+              <GiStonePath   size={25} color="black" />
               <h4>Natursteinarbeiten</h4>
             </div>
             <p>Robuste und stilvolle Gestaltung mit Naturmaterialien.</p>

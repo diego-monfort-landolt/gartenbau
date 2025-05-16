@@ -45,7 +45,7 @@ h4 {
   display: flex;
   align-items: center;
   gap: 15px;
-  flex-wrap: nowrap; /* Verhindert Umbruch von Icon & Titel */
+  flex-wrap: wrap; /* Verhindert Umbruch von Icon & Titel */
   justify-content: center; /* Titel wird immer mittig ausgerichtet */
 }
 
