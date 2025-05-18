@@ -3,7 +3,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 128, 0, 0.9);
+  background:  rgba(0, 0, 0, 0.753);
   padding: 15px 20px;
   display: flex;
   align-items: center;
@@ -90,7 +90,7 @@ nav ul li a {
     position: absolute;
     top: 60px;
     right: 0; /* Menü erscheint von rechts */
-    background: rgba(0, 128, 0, 0.9);
+    background:  rgba(0, 0, 0, 0.753);
     flex-direction: column;
     width: 100%;
     text-align: right;
@@ -105,7 +105,9 @@ nav ul li a {
   }
 
   .logo {
-    width: auto;
+    width: 90px;
+    height: 50px;
+    border-radius: 10px;
     object-fit: cover;
   }
 
