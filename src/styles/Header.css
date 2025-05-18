@@ -23,7 +23,6 @@
   position: absolute;
   color: white;
   background: rgba(0, 0, 0, 0.753); /* Halbtransparentes Overlay */
-  box-shadow: 0 0px 52px 5px #1ebe5d ;
   padding: 30px;
   border-radius: 10px;
   margin: 0 10px;
