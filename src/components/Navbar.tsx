@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import "../styles/Navbar.css";
-import Logo from '../assets/img/gartenbaubuelachklotenruemlang-jorgelandolt.png';
+import Logo from '../assets/img/landoltgartenbaugmbhbuelach.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,6 +33,7 @@ const Navbar = () => {
       </button>
       <ul className={`nav-links ${isOpen ? "open" : ""}`} onClick={handleLinkClick}>
         <li><a href="#home">Home</a></li>
+        <li><a href="#about">Über uns</a></li>
         <li><a href="#Dienstleistungen">Dienstleistungen</a></li>
         <li><a href="#Gallery">Gallery</a></li>
         <li><a href="#contact">Kontakt</a></li>

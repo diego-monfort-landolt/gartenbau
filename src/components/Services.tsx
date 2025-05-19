@@ -68,13 +68,13 @@ const Services = () => {
     <>
       <section id="Dienstleistungen" className="services">
         <h2 className="services-title">Unsere Dienstleistungen</h2>
-        <div className="services-container">
-          <div className="service">
-            <div className="service-header">
+        <div className="services-container ">
+          <div className="service ">
+            <div className="service-header ">
               <FaLeaf size={30} color="black" />
               <h4>Gartenpflege</h4>
             </div>
-            <p>Wir halten deinen Garten gesund und schön.</p>
+            <p>Mit unserer professionellen Gartenpflege sorgen wir dafür, dass Ihre Grünflächen gesund, gepflegt und langlebig bleiben. Ob regelmäßige Pflege, Werterhalt oder Instandhaltung – wir kümmern uns mit Fachwissen und Leidenschaft um Ihren Garten, damit er seine Schönheit bewahrt.</p>
             <span className="info-link" onClick={() => openModal("gartenpflege")}>
               Mehr Informationen
             </span>
@@ -85,7 +85,9 @@ const Services = () => {
               <MdConstruction  size={30} color="black" />
               <h4>Gartenbau</h4>
             </div>
-            <p>Kreatives Design für deine Außenbereiche.</p>
+            <p>Kreatives Design für deine Außenbereiche Ein Garten ist mehr als nur Grünfläche – er ist ein Ort der Ruhe, Inspiration und Lebensfreude. Mit unserem kreativen Design verwandeln wir Außenbereiche in einzigartige Wohlfühloasen. Ob moderne Gartengestaltung, naturnahe Umgestaltung oder stilvolle Akzente mit Natursteinen – wir planen und realisieren deinen Garten ganz nach deinen Wünschen.
+
+            Lass deine Ideen Wirklichkeit werden und genieße die Schönheit eines perfekt gestalteten Gartens! 🌿✨</p>
             <span className="info-link" onClick={() => openModal("gartenbau")}>
               Mehr Informationen
             </span>
@@ -96,7 +98,7 @@ const Services = () => {
               <GiStonePath   size={25} color="black" />
               <h4>Natursteinarbeiten</h4>
             </div>
-            <p>Robuste und stilvolle Gestaltung mit Naturmaterialien.</p>
+            <p>Stilvolle und langlebige Gestaltung mit Naturmaterialien Naturstein bringt zeitlose Eleganz und Robustheit in deine Außenbereiche. Ob Wege, Mauern oder Terrassen – mit hochwertigen Natursteinen schaffen wir langlebige und stilvolle Lösungen für deinen Garten. Die einzigartige Struktur und Farbgebung jedes Steins verleihen deinem Außenbereich Charakter und Natürlichkeit.</p>
             <span className="info-link" onClick={() => openModal("naturstein")}>
               Mehr Informationen
             </span>
