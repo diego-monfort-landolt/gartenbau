@@ -34,6 +34,7 @@ const Navbar = () => {
       <ul className={`nav-links ${isOpen ? "open" : ""}`} onClick={handleLinkClick}>
         <li><a href="#home">Home</a></li>
         <li><a href="#Dienstleistungen">Dienstleistungen</a></li>
+        <li><a href="#Gallery">Gallery</a></li>
         <li><a href="#contact">Kontakt</a></li>
       </ul>
     </nav>

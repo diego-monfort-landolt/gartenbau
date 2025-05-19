@@ -24,7 +24,7 @@ const images = [
 
 const GalleryComponent: React.FC = () => {
   return (
-    <section className="gallery ">
+    <section id='Gallery' className="gallery ">
       <h2 className="gallery-title">Galerie</h2>
      
 

@@ -56,7 +56,16 @@ h4 {
   white-space: nowrap; /* Verhindert Zeilenumbruch */
 }
 .service p {
+  
   word-wrap: break-word; /* Falls langer Text, wird er umgebrochen */
+}
+.descriton-gall {
+  
+  font-size: 18px;
+  color: #444;
+  max-width: 800px; /* Setzt eine maximale Breite für den Text */
+  margin: 0 auto; /* Zentriert den Text */
+  text-align: left;
 }
 .info-link {
   color: #007bff;
