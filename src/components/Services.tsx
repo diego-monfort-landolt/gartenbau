@@ -4,6 +4,8 @@ import { GiStonePath  } from "react-icons/gi";
 import { MdConstruction  } from "react-icons/md";
 import "../styles/Services.css";
 
+
+
 // Bilder importieren
 import Bild1 from "../assets/img/J. Landolt Gartenbau GmbH,gartenweg.png";
 import Bild2 from "../assets/img/gartenplatten-wiese.png";
@@ -68,13 +70,19 @@ const Services = () => {
     <>
       <section id="Dienstleistungen" className="services">
         <h2 className="services-title">Unsere Dienstleistungen</h2>
+          <p className='descriton-gall'>
+            Ihr Fachbetrieb für <b>Gartenbau in Bülach, Kloten und Rümlang</b> 
+             Mit langjähriger Erfahrung und echter Leidenschaft gestalten und pflegen wir individuelle Gärten – ganz nach Ihren Vorstellungen. Ob Neuanlage, Umgestaltung oder saisonale Pflege: Bei <b>J. Landolt Gartenbau GmbH</b> stehen <em>Engagement, Zuverlässigkeit und persönliche Beratung</em> im Mittelpunkt. Jorge Landolt und sein Team sind Ihr Ansprechpartner für professionellen Gartenbau im Zürcher Unterland.
+
+            Zu unseren Arbeiten zählen Natursteinarbeiten, Rasenpflege, Hecken- und Baumschnitt sowie die kreative Gestaltung von Gartenwegen und Sitzplätzen.
+      </p>
         <div className="services-container ">
           <div className="service ">
             <div className="service-header ">
               <FaLeaf size={30} color="black" />
               <h4>Gartenpflege</h4>
             </div>
-            <p>Mit unserer professionellen Gartenpflege sorgen wir dafür, dass Ihre Grünflächen gesund, gepflegt und langlebig bleiben. Ob regelmäßige Pflege, Werterhalt oder Instandhaltung – wir kümmern uns mit Fachwissen und Leidenschaft um Ihren Garten, damit er seine Schönheit bewahrt.</p>
+            <p>Verwandeln Sie Ihren Garten in eine grüne Oase – mit unserer professionellen Pflege für langanhaltende Schönheit!</p>
             <span className="info-link" onClick={() => openModal("gartenpflege")}>
               Mehr Informationen
             </span>
@@ -85,9 +93,7 @@ const Services = () => {
               <MdConstruction  size={30} color="black" />
               <h4>Gartenbau</h4>
             </div>
-            <p>Kreatives Design für deine Außenbereiche Ein Garten ist mehr als nur Grünfläche – er ist ein Ort der Ruhe, Inspiration und Lebensfreude. Mit unserem kreativen Design verwandeln wir Außenbereiche in einzigartige Wohlfühloasen. Ob moderne Gartengestaltung, naturnahe Umgestaltung oder stilvolle Akzente mit Natursteinen – wir planen und realisieren deinen Garten ganz nach deinen Wünschen.
-
-            Lass deine Ideen Wirklichkeit werden und genieße die Schönheit eines perfekt gestalteten Gartens! 🌿✨</p>
+            <p>Gestalten Sie Ihren Garten neu – stilvoll, kreativ und ganz nach Ihren Wünschen!</p>
             <span className="info-link" onClick={() => openModal("gartenbau")}>
               Mehr Informationen
             </span>
@@ -98,17 +104,12 @@ const Services = () => {
               <GiStonePath   size={25} color="black" />
               <h4>Natursteinarbeiten</h4>
             </div>
-            <p>Stilvolle und langlebige Gestaltung mit Naturmaterialien Naturstein bringt zeitlose Eleganz und Robustheit in deine Außenbereiche. Ob Wege, Mauern oder Terrassen – mit hochwertigen Natursteinen schaffen wir langlebige und stilvolle Lösungen für deinen Garten. Die einzigartige Struktur und Farbgebung jedes Steins verleihen deinem Außenbereich Charakter und Natürlichkeit.</p>
+            <p>Setzen Sie stilvolle Akzente mit langlebigem Naturstein – zeitlose Eleganz für Wege, Mauern und Terrassen!</p>
             <span className="info-link" onClick={() => openModal("naturstein")}>
               Mehr Informationen
             </span>
           </div>
-           <p className='descriton-gall'>
-            Ihr Fachbetrieb für <b>Gartenbau in Bülach, Kloten und Rümlang</b> 
-             Mit langjähriger Erfahrung und echter Leidenschaft gestalten und pflegen wir individuelle Gärten – ganz nach Ihren Vorstellungen. Ob Neuanlage, Umgestaltung oder saisonale Pflege: Bei <b>J. Landolt Gartenbau GmbH</b> stehen <em>Engagement, Zuverlässigkeit und persönliche Beratung</em> im Mittelpunkt. Jorge Landolt und sein Team sind Ihr Ansprechpartner für professionellen Gartenbau im Zürcher Unterland.
-
-            Zu unseren Arbeiten zählen Natursteinarbeiten, Rasenpflege, Hecken- und Baumschnitt sowie die kreative Gestaltung von Gartenwegen und Sitzplätzen.
-      </p>
+         
         </div>
       </section>
 

@@ -48,7 +48,6 @@ nav {
 .nav-links {
   display: flex;
   list-style: none;
-  
   gap: 20px;
 }
 
@@ -57,7 +56,7 @@ nav ul {
   list-style: none;
   gap: 20px;
   flex-grow: 1;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 nav ul li a {
@@ -112,7 +111,7 @@ nav ul li a {
     height: 50px;
     top: 20px;
     object-fit: cover;
-   
+    
   }
 
   nav ul {

@@ -1,0 +1,65 @@
+.gartenpflege-gartenbau {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 20px;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+}
+.text-container {
+  flex: 1;
+  align-items: left;
+  text-align: left;
+}
+
+.text-container h2 {
+  font-size: 28px;
+  font-weight: bold;
+  align-items: left;
+  text-align: left;
+}
+
+.text-container p {
+  font-size: 18px;
+  color: #444;
+
+  align-items: left;
+  text-align: left;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* **Responsives Design für Mobile & Tablets** */
+@media (max-width: 768px) {
+  .gartenpflege-gartenbau {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-container {
+    text-align: center;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .image-container img {
+    width: 90%;
+  }
+}

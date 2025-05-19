@@ -38,6 +38,8 @@
   background-color: rgba(255, 255, 255, 0.8);
   width: 80%;
   max-width: 350px;
+
+  
 }
 h4 {
   text-wrap: wrap;
@@ -58,12 +60,12 @@ h4 {
 }
 .service p {
   text-align: left;
+  font-size: 15px;
   word-wrap: break-word; /* Falls langer Text, wird er umgebrochen */
 }
 .descriton-gall {
-  
   font-size: 18px;
-  color: #444;
+  color: #000;
   max-width: 800px; /* Setzt eine maximale Breite für den Text */
   margin: 0 auto; /* Zentriert den Text */
   text-align: left;
