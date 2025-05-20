@@ -4,7 +4,7 @@ import Logo from '../assets/img/landoltgartenbaugmbhbuelach.png';
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isOpen, setIsOpen] = useState<boolean>(window.innerWidth <= 768);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isVisible, setIsVisible] = useState(true);
   const lastScrollTop = useRef(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
