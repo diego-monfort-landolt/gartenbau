@@ -77,6 +77,7 @@ justify-content: center;
 }
 .phone-icon {
   margin-right: 5px;
+  cursor: pointer;
 }
 .phone-icon:hover {
   color: green;

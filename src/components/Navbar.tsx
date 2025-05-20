@@ -3,6 +3,7 @@ import "../styles/Navbar.css";
 import Logo from '../assets/img/landoltgartenbaugmbhbuelach.png';
 
 const Navbar = () => {
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const lastScrollTop = useRef(0);
@@ -34,8 +35,18 @@ const Navbar = () => {
       <ul className={`nav-links ${isOpen ? "open" : ""}`} onClick={handleLinkClick}>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">Über uns</a></li>
-        <li><a href="#Dienstleistungen">Dienstleistungen</a></li>
-        <li><a href="#Gartenbau">Gartenbau</a></li>
+         <li className="dropdown" 
+            onMouseEnter={() => setIsDropdownOpen(true)} 
+            onMouseLeave={() => setIsDropdownOpen(false)}>
+          <a href="#Dienstleistungen">Dienstleistungen</a>
+          {isDropdownOpen && (
+            <ul className="dropdown-menu">
+              <li><a href="#Gartenbau">Gartenbau</a></li>
+              <li><a href="#gartenpflege">Gartenpflege</a></li>
+              <li><a href="#naturstein">Natursteinarbeiten</a></li>
+            </ul>
+          )}
+        </li>
         <li><a href="#Gallery">Gallery</a></li>
         <li><a href="#contact">Kontakt</a></li>
       </ul>

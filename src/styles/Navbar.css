@@ -65,9 +65,49 @@ nav ul li a {
   font-size: 18px;
   
 }
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: max-content;
+  background: rgba(0, 0, 0, 0.9);
+  list-style: none;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000; /* Menü über anderen Elementen */
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  pointer-events: auto;
+}
+
+
+.dropdown-menu li {
+  padding: 5px 0;
+}
+
+.dropdown-menu a {
+  color: white;
+  font-size: 16px;
+  display: block;
+  padding: 5px 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+.dropdown-menu a:hover {
+  background: #1ebe5d;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 
 /* **RESPONSIV: Hamburger-Menü ganz rechts anzeigen** */
 @media (max-width: 768px) {
+  
    .hidden {
     top: -100px; /* Menü nach oben ausblenden */
     opacity: 0;
@@ -117,5 +157,13 @@ nav ul li a {
   nav ul {
     flex-wrap: wrap;
     justify-content: center;
+  }
+    .dropdown-menu {
+    position: static; /* Fixiert die Position in der mobilen Ansicht */
+    display: none;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block;
   }
 }
