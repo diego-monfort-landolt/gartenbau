@@ -75,9 +75,15 @@ text-align: center;
 justify-content: center;
 
 }
+.phone-icon {
+  margin-right: 5px;
+}
+.phone-icon:hover {
+  color: green;
+}
 
 .whatsapp-button:hover {
-  border-bottom: 1px solid #1ebe5d;
+  color:  #1ebe5d;
 }
 /* Größerer Header nur für Desktop */
 @media screen and (min-width: 1024px) {
