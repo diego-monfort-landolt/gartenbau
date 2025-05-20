@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/GartenpflegeGartenbau.css";
-import BeispielBild from "../assets/img/J. Landolt Gartenbau GmbH,gartenweg.png";
+import BeispielBild from "../assets/img/schönerplattenboden.png";
 
 const GartenpflegeGartenbau: React.FC = () => {
   return (
