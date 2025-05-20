@@ -94,4 +94,25 @@
   font-size: 10px;
   color: #333;
 }
+ .contact-info {
+    flex-direction: row; /* Icons nebeneinander statt untereinander */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Kleineren Abstand einstellen */
+  }
+
+  .contact-item {
+    font-size: 14px; /* Icons und Text verkleinern */
+    gap: 6px;
+  }
+
+  .contact-item svg {
+    width: 16px; /* Kleinere Icons */
+    height: 16px;
+  }
+
+  .contact-item p {
+    font-size: 12px;
+  }
+
 }

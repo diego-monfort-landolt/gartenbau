@@ -5,7 +5,7 @@ const Contact = () => (
   <section id="contact" className="contact">
     <h2>Kontakt</h2>
 <div className="description-k">
-  <p>Kontaktieren Sie unns, wir freuen uns auf Sie und Ihren Garten!</p>
+  <p>Kontaktieren Sie uns, wir freuen uns auf Sie und Ihren Garten!</p>
 </div>
     <form
       className="contact-form"
