@@ -3,13 +3,13 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background:  rgba(0, 0, 0, 0.753);
+  background: rgba(0, 0, 0, 0.753);
   padding: 15px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
-  transition: top 0.3s ease-in-out; /* Sanfte Animation */
+  transition: top 0.3s ease-in-out;
 }
 
 .logo {
@@ -21,7 +21,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
- 
   overflow: hidden;
   object-fit: fill;
 }
@@ -39,10 +38,10 @@ nav {
   font-size: 30px;
   color: white;
   cursor: pointer;
-  display: none; /* Standardmäßig ausgeblendet */
+  display: none;
   position: absolute;
   top: 15px;
-  right: 20px; /* Menü-Button ganz rechts */
+  right: 20px;
 }
 
 .nav-links {
@@ -63,8 +62,12 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 18px;
-  
 }
+
+.dropdown {
+  position: relative;
+}
+
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -75,15 +78,9 @@ nav ul li a {
   list-style: none;
   padding: 10px;
   border-radius: 5px;
-  z-index: 1000; /* Menü über anderen Elementen */
-}
-.dropdown {
-  position: relative;
-}
-.dropdown-menu {
+  z-index: 1000;
   pointer-events: auto;
 }
-
 
 .dropdown-menu li {
   padding: 5px 0;
@@ -105,11 +102,10 @@ nav ul li a {
   display: block;
 }
 
-/* **RESPONSIV: Hamburger-Menü ganz rechts anzeigen** */
+/* ====== MOBILE ====== */
 @media (max-width: 768px) {
-  
-   .hidden {
-    top: -100px; /* Menü nach oben ausblenden */
+  .hidden {
+    top: -100px;
     opacity: 0;
     transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
   }
@@ -118,19 +114,21 @@ nav ul li a {
     top: 0;
     opacity: 1;
   }
+
   nav {
     height: 80px;
   }
+
   .hamburger {
     display: block;
-    right: 20px; /* Sicherstellen, dass der Button ganz rechts bleibt */
+    right: 20px;
   }
 
   .nav-links {
     position: absolute;
     top: 60px;
-    right: 0; /* Menü erscheint von rechts */
-    background:  rgba(0, 0, 0, 0.753);
+    right: 0;
+    background: rgba(0, 0, 0, 0.753);
     flex-direction: column;
     width: 100%;
     text-align: right;
@@ -138,12 +136,12 @@ nav ul li a {
     padding-left: 15px;
   }
 
+  /* Menü wird bei .open angezeigt (gesteuert durch React-Zustand) */
   .nav-links.open {
     display: flex;
     justify-content: left;
     text-align: left;
     padding: 10px;
-    
   }
 
   .logo {
@@ -151,19 +149,22 @@ nav ul li a {
     height: 50px;
     top: 20px;
     object-fit: cover;
-    
   }
 
-  .nav ul {
+  nav ul {
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .dropdown-menu {
-    position: static; /* Fixiert die Position in der mobilen Ansicht */
-    display: none;
+    position: static;
+    display: none !important;
   }
 
   .dropdown.open .dropdown-menu {
-    display: block;
+    display: block !important;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: none;
   }
 }

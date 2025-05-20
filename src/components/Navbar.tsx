@@ -3,52 +3,67 @@ import "../styles/Navbar.css";
 import Logo from '../assets/img/landoltgartenbaugmbhbuelach.png';
 
 const Navbar = () => {
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(window.innerWidth <= 768);
   const [isVisible, setIsVisible] = useState(true);
   const lastScrollTop = useRef(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const handleNavToggle = () => setIsOpen(!isOpen);
-  const handleLinkClick = () => setIsOpen(false); // Schließt das Menü automatisch
+  const handleLinkClick = () => setIsOpen(false);
+
+  const toggleDropdown = (event: React.MouseEvent) => {
+    if (isMobile) {
+      event.stopPropagation(); // Verhindert, dass handleLinkClick ausgelöst wird
+      setIsDropdownOpen(!isDropdownOpen);
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop > lastScrollTop.current) {
-        setIsVisible(false); // Menü ausblenden beim Scrollen nach unten
-      } else {
-        setIsVisible(true); // Menü anzeigen beim Scrollen nach oben
-      }
+      setIsVisible(scrollTop <= lastScrollTop.current);
       lastScrollTop.current = scrollTop;
     };
 
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
     <nav className={isVisible ? "visible" : "hidden"}>
       <img src={Logo} alt="J. Landolt Gartenbau GmbH Logo" className="logo" />
       <button className="hamburger" onClick={handleNavToggle}>
-        ☰ {/* Symbol für das Menü */}
+        ☰
       </button>
-      <ul className={`nav-links ${isOpen ? "open" : ""}`} onClick={handleLinkClick}>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Über uns</a></li>
-         <li className="dropdown" 
-            onMouseEnter={() => setIsDropdownOpen(true)} 
-            onMouseLeave={() => setIsDropdownOpen(false)}>
-          <a href="">Dienstleistungen</a>
+      <ul className={`nav-links ${isOpen ? "open" : ""}`}>
+        <li onClick={handleLinkClick}><a href="#home">Home</a></li>
+        <li onClick={handleLinkClick}><a href="#about">Über uns</a></li>
+        <li
+          className={`dropdown ${isDropdownOpen ? "open" : ""}`}
+          onClick={toggleDropdown}
+          onMouseEnter={() => !isMobile && setIsDropdownOpen(true)}
+          onMouseLeave={() => !isMobile && setIsDropdownOpen(false)}
+        >
+          <a href="#">Dienstleistungen ⬇️</a>
           {isDropdownOpen && (
             <ul className="dropdown-menu">
-              <li><a href="#Gartenbau">Gartenbau</a></li>
-              <li><a href="#gartenpflege">Gartenpflege</a></li>
-              <li><a href="#naturstein">Natursteinarbeiten</a></li>
+              <li onClick={handleLinkClick}><a href="#Gartenbau">Gartenbau</a></li>
+              <li onClick={handleLinkClick}><a href="#gartenpflege">Gartenpflege</a></li>
+              <li onClick={handleLinkClick}><a href="#naturstein">Natursteinarbeiten</a></li>
             </ul>
           )}
         </li>
-        <li><a href="#Gallery">Gallery</a></li>
-        <li><a href="#contact">Kontakt</a></li>
+        <li onClick={handleLinkClick}><a href="#Gallery">Gallery</a></li>
+        <li onClick={handleLinkClick}><a href="#contact">Kontakt</a></li>
       </ul>
     </nav>
   );
