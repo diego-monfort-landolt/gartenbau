@@ -154,11 +154,11 @@ nav ul li a {
     
   }
 
-  nav ul {
+  .nav ul {
     flex-wrap: wrap;
     justify-content: center;
   }
-    .dropdown-menu {
+  .dropdown-menu {
     position: static; /* Fixiert die Position in der mobilen Ansicht */
     display: none;
   }

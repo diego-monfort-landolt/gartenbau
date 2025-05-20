@@ -38,7 +38,7 @@ const Navbar = () => {
          <li className="dropdown" 
             onMouseEnter={() => setIsDropdownOpen(true)} 
             onMouseLeave={() => setIsDropdownOpen(false)}>
-          <a href="#Dienstleistungen">Dienstleistungen</a>
+          <a href="">Dienstleistungen</a>
           {isDropdownOpen && (
             <ul className="dropdown-menu">
               <li><a href="#Gartenbau">Gartenbau</a></li>
