@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import "../styles/Navbar.css";
 import Logo from '../assets/img/landoltgartenbaugmbhbuelach.png';
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -53,7 +54,7 @@ const Navbar = () => {
           onMouseEnter={() => !isMobile && setIsDropdownOpen(true)}
           onMouseLeave={() => !isMobile && setIsDropdownOpen(false)}
         >
-          <a href="#">Dienstleistungen ⬇️</a>
+          <a href="#">Dienstleistungen <MdKeyboardArrowDown /></a>
           {isDropdownOpen && (
             <ul className="dropdown-menu">
               <li onClick={handleLinkClick}><a href="#Gartenbau">Gartenbau</a></li>
