@@ -57,8 +57,8 @@ const Navbar = () => {
           {isDropdownOpen && (
             <ul className="dropdown-menu">
               <li onClick={handleLinkClick}><a href="#Gartenbau">Gartenbau</a></li>
-              <li onClick={handleLinkClick}><a href="#gartenpflege">Gartenpflege</a></li>
-              <li onClick={handleLinkClick}><a href="#naturstein">Natursteinarbeiten</a></li>
+              <li onClick={handleLinkClick}><a href="#Gartenpflege">Gartenpflege</a></li>
+              <li onClick={handleLinkClick}><a href="#Natursteinarbeiten">Natursteinarbeiten</a></li>
             </ul>
           )}
         </li>

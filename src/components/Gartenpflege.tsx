@@ -1,15 +1,15 @@
 import React from "react";
-import "../styles/GartenpflegeGartenbau.css";
+import "../styles/Gartenpflege.css";
 import BeispielBild from "../assets/img/J. Landolt Gartenbau GmbH,gartenweg.png";
 
-const GartenpflegeGartenbau: React.FC = () => {
+const Gartenpflege: React.FC = () => {
   return (
-    <section id="Gartenbau" className="gartenpflege-section">
-      <div className="image-box">
+    <section id="Gartenpflege" className="gartenpflege-container">
+      <div className="image-wrapper">
         <img src={BeispielBild} alt="Gartenpflege und Gartenbau Beispiel" />
       </div>
-      <div className="text-box">
-        <h2>Gartenbau</h2>
+      <div className="text-wrapper">
+        <h2>Gartenpflege</h2>
         <p>
           Ein gepflegter Garten ist mehr als nur eine Außenfläche – er ist ein Rückzugsort, eine Wohlfühloase und ein lebendiges Naturerlebnis. Mit unserer fachkundigen Gartenpflege sorgen wir dafür, dass Ihre Grünflächen gesund und blühend bleiben – das ganze Jahr über. Ob regelmäßige Pflege, Rasen- und Heckenservice oder gezielte Maßnahmen zum Werterhalt – wir kümmern uns mit Erfahrung und Leidenschaft um jeden Bereich Ihres Gartens.
 
@@ -22,4 +22,4 @@ const GartenpflegeGartenbau: React.FC = () => {
   );
 };
 
-export default GartenpflegeGartenbau;
+export default Gartenpflege;

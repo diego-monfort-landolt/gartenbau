@@ -5,6 +5,8 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Gallery from "./components/Gallery";
 import GartenpflegeGartenbau from "./components/GartenpflegeGartenbau";
+import Gartenpflege from "./components/Gartenpflege";
+import Natursteinarbeiten from "./components/Natursteinarbeiten";
 
 function App() {
   return (
@@ -16,8 +18,9 @@ function App() {
         <Services />
       </div>
       <GartenpflegeGartenbau />
+      <Gartenpflege />
+      <Natursteinarbeiten />
        <Gallery />
-      
       <Contact />
     </>
   );
