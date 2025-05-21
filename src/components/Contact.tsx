@@ -5,7 +5,8 @@ const Contact = () => (
   <section id="contact" className="contact">
     <h2>Kontakt</h2>
 <div className="description-k">
-  <p>Kontaktieren Sie uns, wir freuen uns auf Sie und Ihren Garten!</p>
+  <p>Jorge Landolt betreut sowohl kleine Privatgärten als auch großzügige Anlagen – individuell abgestimmt auf Ihre Wünsche und die Bedürfnisse der Pflanzen. Denn nur durch regelmässige Pflege bleibt Ihr Garten gesund, blühend und einladend – das ganze Jahr über.<br />
+<b>Kontaktieren Sie uns, wir freuen uns auf Sie und Ihren Garten! </b></p>
 </div>
     <form
       className="contact-form"
@@ -30,7 +31,7 @@ const Contact = () => (
         <FaEnvelope size={20} />
         <p>jorgelandolt@hotmail.com</p>
       </div>
-      <div className="contact-item">
+      <div className="contact-item"><p></p>
         <FaMapMarkerAlt size={20} />
         <p>J. Landolt Gartenbau GmbH</p>
       </div>

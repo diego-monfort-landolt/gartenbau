@@ -110,25 +110,20 @@ h4 {
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
 }
-
-
 .modal-content h2 {
   margin-top: 0;
   font-size: 24px;
 }
-
 .modal-content p {
   margin: 15px 0px;
   font-size: 16px;
 }
-
 .modal-image {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
   margin-top: 15px;
 }
-
 .modal-close {
   margin-top: 20px;
   background: #007bff;
@@ -138,12 +133,9 @@ h4 {
   cursor: pointer;
   border-radius: 5px;
 }
-
 .modal-close:hover {
   background: #0056b3;
 }
-
-
 @media (min-width: 768px) {
   .modal-content p {
   margin: 10px 0;
@@ -153,7 +145,6 @@ h4 {
     flex-direction: row;
     justify-content: center;
   }
-
   .service {
     width: 90%;
     margin-bottom: 40px; /* Fügt extra Abstand unter jedem Service hinzu */
@@ -170,10 +161,8 @@ h4 {
   .services {
     padding: 20px 5px; /* Noch kompakter für sehr kleine Displays */
   }
-
   .service {
     width: 95%; /* Nutzt fast die gesamte Bildschirmbreite */
-  }
-  
+  } 
 }
 
