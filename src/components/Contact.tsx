@@ -9,6 +9,9 @@ const Contact = () => {
   const handleEmailClick = () => {
     const mailtoLink = `mailto:landoltdiego@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
     window.location.href = mailtoLink;
+    // Entferne text
+     setSubject("");
+     setMessage("");
   };
 
   return (
