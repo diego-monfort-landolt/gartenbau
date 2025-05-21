@@ -13,14 +13,9 @@ const About = () => (
       <div className="image-box">
         <img src={profielfoto} alt="Gartenbau" className="about-image" />
       </div>
-      
-     
     </div>
-
     <p className="closing-text"><b>Fachkompetenz und Erfahrung im Gartenbau</b><br />Mit langjähriger Erfahrung, fachlicher Qualifikation und viel Leidenschaft betreuen wir Projekte in allen Bereichen des Gartenbaus. Von der regelmäßigen Gartenpflege bis zur kompletten Neugestaltung Ihrer Grünflächen – auf unser Team können Sie sich verlassen.
-
-Lassen Sie Ihren Garten in neuem Glanz erblühen! Vertrauen Sie auf unsere Expertise und gestalten Sie mit uns Ihren Garten ganz nach Ihren Vorstellungen. Wir freuen uns auf Ihre Anfrage!</p>
+    Lassen Sie Ihren Garten in neuem Glanz erblühen! Vertrauen Sie auf unsere Expertise und gestalten Sie mit uns Ihren Garten ganz nach Ihren Vorstellungen. Wir freuen uns auf Ihre Anfrage!</p>
   </section>
 );
-
 export default About;
