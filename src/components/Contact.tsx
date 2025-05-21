@@ -22,6 +22,10 @@ const Contact = () => (
     </form>
 
     {/* Icons und Kontaktinformationen jetzt UNTER dem Formular */}
+  <a href="mailto:landoltdiego@gmail.com?subject=Info zu Gartenbau&body=Hallo, ich habe eine Frage zu Ihrem Gartenbau-Service." className="email-button">
+  📩 E-Mail schreiben
+  </a>
+
     <div className="contact-info">
       <div className="contact-item">
         <FaPhone size={20} />
