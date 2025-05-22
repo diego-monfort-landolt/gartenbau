@@ -13,7 +13,6 @@ const Contact = () => {
      setSubject("");
      setMessage("");
   };
-
   return (
     <section id="contact" className="contact">
       <h2>Kontakt</h2>
@@ -33,7 +32,6 @@ const Contact = () => {
         <button type="submit">Nachricht senden</button>
         <input type="hidden" name="_next" value="https://diego-monfort-landolt.github.io/gartenbau/"></input>
       </form>
-
       {/* Icons und Kontaktinformationen jetzt UNTER dem Formular */}
       <div className="contact-form">
         <input 
@@ -52,7 +50,6 @@ const Contact = () => {
         />
         <button onClick={handleEmailClick}>📩 E-Mail schreiben</button>
       </div>
-
       <div className="contact-info">
         <div className="contact-item">
           <FaPhone size={20} />
@@ -70,5 +67,4 @@ const Contact = () => {
     </section>
   );
 };
-
 export default Contact;
