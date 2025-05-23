@@ -26,8 +26,6 @@ const GalleryComponent: React.FC = () => {
   return (
     <section id='Gallery' className="gallery ">
       <h2 className="gallery-title">Galerie</h2>
-     
-
         <Gallery 
         items={images}
         showThumbnails={false}
@@ -36,6 +34,7 @@ const GalleryComponent: React.FC = () => {
         showNav={true}
         autoPlay={true}
         slideInterval={4000}
+        lazyLoad={true}
         /> 
 
     </section>
