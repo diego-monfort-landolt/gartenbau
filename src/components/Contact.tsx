@@ -24,7 +24,6 @@ const Contact = () => {
           <b>Kontaktieren Sie uns, wir freuen uns auf Sie und Ihren Garten!</b>
         </p>
       </div>
-
       <form
         className="contact-form"
         action="https://formsubmit.co/landoltdiego@gmail.com"
