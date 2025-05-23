@@ -6,10 +6,10 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const form = event.target;
-    form.querySelector('input[name="_subject"]').value = `Neue Anfrage von ${name}`;
+    const form = event.target as HTMLFormElement;
+    (form.querySelector('input[name="_subject"]') as HTMLInputElement)!.value = `Neue Anfrage von ${name}`;
     form.submit();
   };
 
