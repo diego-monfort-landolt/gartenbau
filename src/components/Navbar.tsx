@@ -9,7 +9,6 @@ const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const lastScrollTop = useRef(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
   const handleNavToggle = () => setIsOpen(!isOpen);
   const handleLinkClick = () => setIsOpen(false);
 
@@ -19,18 +18,15 @@ const Navbar = () => {
       setIsDropdownOpen(!isDropdownOpen);
     }
   };
-
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       setIsVisible(scrollTop <= lastScrollTop.current);
       lastScrollTop.current = scrollTop;
     };
-
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleResize);
     return () => {
@@ -38,7 +34,6 @@ const Navbar = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
   return (
     <nav className={isVisible ? "visible" : "hidden"}>
       <img src={Logo} alt="J. Landolt Gartenbau GmbH Logo" className="logo" />
@@ -69,5 +64,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;
