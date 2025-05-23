@@ -12,7 +12,6 @@ const Contact = () => {
     (form.querySelector('input[name="_subject"]') as HTMLInputElement)!.value = `Neue Anfrage von ${name}`;
     form.submit();
   };
-
   return (
     <section id="contact" className="contact">
       <h2>Kontakt</h2>
@@ -54,7 +53,6 @@ const Contact = () => {
         <input type="hidden" name="_autoresponse" value="Danke für deine Nachricht! Wir melden uns bald." />
         <input type="hidden" name="_next" value="https://diego-monfort-landolt.github.io/gartenbau/" />
       </form>
-
       <div className="contact-info">
         <div className="contact-item">
           <FaPhone size={20} />
@@ -72,5 +70,4 @@ const Contact = () => {
     </section>
   );
 };
-
 export default Contact;
