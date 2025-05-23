@@ -3,9 +3,6 @@ import { FaLeaf } from "react-icons/fa";
 import { GiStonePath  } from "react-icons/gi";
 import { MdConstruction  } from "react-icons/md";
 import "../styles/Services.css";
-
-
-
 // Bilder importieren
 import Bild1 from "../assets/img/J. Landolt Gartenbau GmbH,gartenweg.png";
 import Bild2 from "../assets/img/gartenplatten-wiese.png";
@@ -41,11 +38,9 @@ const modalData: Record<
     textBelowImage: `J. Landolt Gartenbau GmbH ist Ihr zuverlässiger Partner für Natursteinarbeiten in Bülach und Umgebung. Vertrauen Sie auf unsere Erfahrung, um stilvolle Akzente mit Naturmaterialien zu setzen.`,
   },
 };
-
 const Services = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedService, setSelectedService] = useState<keyof typeof modalData | null>(null);
-
   // Scroll im Hintergrund deaktivieren, solange Modal offen
   useEffect(() => {
     document.body.style.overflow = showModal ? "hidden" : "auto";
@@ -53,19 +48,15 @@ const Services = () => {
       document.body.style.overflow = "auto";
     };
   }, [showModal]);
-
   const openModal = (serviceKey: keyof typeof modalData) => {
     setSelectedService(serviceKey);
     setShowModal(true);
   };
-
   const closeModal = () => {
     setShowModal(false);
     setSelectedService(null);
   };
-
   const content = selectedService ? modalData[selectedService] : null;
-
   return (
     <>
       <section id="Dienstleistungen" className="services">
@@ -87,7 +78,6 @@ const Services = () => {
               Mehr Informationen
             </span>
           </div>
-
           <div className="service">
             <div className="service-header">
               <MdConstruction  size={30} color="black" />
@@ -98,7 +88,6 @@ const Services = () => {
               Mehr Informationen
             </span>
           </div>
-
           <div className="service">
             <div className="service-header">
               <GiStonePath   size={25} color="black" />
@@ -108,11 +97,9 @@ const Services = () => {
             <span className="info-link" onClick={() => openModal("naturstein")}>
               Mehr Informationen
             </span>
-          </div>
-         
+          </div>      
         </div>
       </section>
-
       {/* Modal */}
       {showModal && content && (
         <div className="modal-overlay" onClick={closeModal}>
@@ -121,7 +108,6 @@ const Services = () => {
             <p>{content.text}</p>
             <img src={content.image} alt="Beispiel" className="modal-image" />
             <p>{content.textBelowImage}</p>
-
             <button onClick={closeModal} className="modal-close">
               Schließen
             </button>
@@ -131,5 +117,4 @@ const Services = () => {
     </>
   );
 };
-
 export default Services;
