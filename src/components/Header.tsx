@@ -21,13 +21,10 @@ const Header = () => (
             rel="noopener noreferrer"
             className="whatsapp-button"
           ><FaWhatsapp className="whatsapp-icon" size={28} color="#25D366"  />
-          </a>
-            
-        
+          </a>   
         <p><FaMapMarkerAlt style={{ marginRight: '5px', transform: 'rotate(-15deg) ' }} />Bülach | Kloten | Rümlang</p>
       </div>
     </div>
   </header>
 );
-
 export default Header;
