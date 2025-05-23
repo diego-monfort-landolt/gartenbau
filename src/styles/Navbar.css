@@ -11,7 +11,6 @@ nav {
   z-index: 1000;
   transition: top 0.3s ease-in-out;
 }
-
 .logo {
   position: absolute;
   top: 0px;
@@ -24,14 +23,12 @@ nav {
   overflow: hidden;
   object-fit: fill;
 }
-
 .logo img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   padding: 2px;
 }
-
 .hamburger {
   background: none;
   border: none;
@@ -43,13 +40,11 @@ nav {
   top: 15px;
   right: 20px;
 }
-
 .nav-links {
   display: flex;
   list-style: none;
   gap: 20px;
 }
-
 nav ul {
   display: flex;
   list-style: none;
@@ -57,17 +52,14 @@ nav ul {
   flex-grow: 1;
   justify-content: flex-end;
 }
-
 nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 18px;
 }
-
 .dropdown {
   position: relative;
 }
-
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -81,11 +73,9 @@ nav ul li a {
   z-index: 1000;
   pointer-events: auto;
 }
-
 .dropdown-menu li {
   padding: 5px 0;
 }
-
 .dropdown-menu a {
   color: white;
   font-size: 16px;
@@ -93,15 +83,12 @@ nav ul li a {
   padding: 5px 10px;
   transition: background 0.3s ease-in-out;
 }
-
 .dropdown-menu a:hover {
   background: #1ebe5d;
 }
-
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-
 /* ====== MOBILE ====== */
 @media (max-width: 768px) {
   .hidden {
@@ -109,21 +96,17 @@ nav ul li a {
     opacity: 0;
     transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
   }
-
   .visible {
     top: 0;
     opacity: 1;
   }
-
   nav {
     height: 80px;
   }
-
   .hamburger {
     display: block;
     right: 20px;
   }
-
   .nav-links {
     position: absolute;
     top: 60px;
@@ -135,7 +118,6 @@ nav ul li a {
     display: none;
     padding-left: 15px;
   }
-
   /* Menü wird bei .open angezeigt (gesteuert durch React-Zustand) */
   .nav-links.open {
     display: flex;
@@ -143,24 +125,20 @@ nav ul li a {
     text-align: left;
     padding: 10px;
   }
-
   .logo {
     width: 100px;
     height: 50px;
     top: 20px;
     object-fit: cover;
   }
-
   nav ul {
     flex-wrap: wrap;
     justify-content: center;
   }
-
   .dropdown-menu {
     position: static;
     display: none !important;
   }
-
   .dropdown.open .dropdown-menu {
     display: block !important;
   }

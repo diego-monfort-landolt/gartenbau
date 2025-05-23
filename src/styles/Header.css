@@ -44,7 +44,6 @@
   border-top: 1px solid #eee;
   text-align: center;
 }
-
 h1 {
   font-size: 2rem;
   font-style: italic ;
@@ -55,12 +54,10 @@ h2 {
   font-size: 1.5rem;
   text-align: center;
   font-style: italic ;
-  
 }
 p {
   font-size: 1rem;
-  text-align: center;
-  
+  text-align: center; 
   padding: 5px;
 }
 .whatsapp-button {
@@ -75,7 +72,6 @@ width: auto; /* Passt sich dem Inhalt an */
 max-width: 50px; /* Setzt eine maximale Breite */
 text-align: center;
 justify-content: center;
-
 }
 .phone-icon {
   margin-right: 5px;
@@ -84,7 +80,6 @@ justify-content: center;
 .phone-icon:hover {
   color: green;
 }
-
 .whatsapp-button:hover {
   color:  #1ebe5d;
 }
@@ -93,7 +88,6 @@ justify-content: center;
   .header {
     height: 120vh; /* Erhöhte Höhe für große Bildschirme */
   }
-
   .overlay {
     padding: 40px; /* Größeres Padding für bessere Lesbarkeit */
   }
@@ -102,11 +96,9 @@ justify-content: center;
     padding: 12px 20px;
     max-width: 60px;
   }
-
   h1 {
     font-size: 4rem; /* Größere Schrift */
   }
-
   p {
     font-size: 1.8rem;
   }
@@ -118,7 +110,6 @@ justify-content: center;
   h1 {
     font-size: 1.5rem;
   }
-
   p {
     font-size: 1rem;
   }
@@ -128,7 +119,6 @@ justify-content: center;
     max-width: 55px;
     text-align: center;
   }
-
   .overlay {
     padding: 15px;
   }

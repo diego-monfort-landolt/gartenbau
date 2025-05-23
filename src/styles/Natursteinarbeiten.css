@@ -14,32 +14,27 @@
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
-
 /* Textbereich bleibt links */
 .text-wrapper {
   flex: 1;
   text-align: left;
 }
-
 .text-wrapper h2 {
   font-size: 30px;
   font-weight: bold;
   color: #333;
 }
-
 .text-wrapper p {
   font-size: 18px;
   color: #555;
   line-height: 1.6;
 }
-
 /* Bildbereich bleibt rechts */
 .image-wrapper {
   flex: 1;
   display: flex;
   justify-content: center;
 }
-
 .image-wrapper img {
   max-width: 100%;
   height: auto;
@@ -47,7 +42,6 @@
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
-
 /* **Responsives Design für Mobile & Tablets** */
 @media (max-width: 768px) {
   .naturstein-container {
@@ -55,15 +49,12 @@
     text-align: center;
     padding: 40px 20px;
   }
-
   .text-wrapper {
     text-align: center;
   }
-
   .image-wrapper {
     width: 100%;
   }
-
   .image-wrapper img {
     width: 90%;
   }

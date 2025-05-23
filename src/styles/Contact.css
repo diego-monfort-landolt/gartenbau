@@ -9,9 +9,7 @@
   background-attachment: fixed; /* Hintergrund bleibt fixiert */
   background-position: center;
   background-size: cover;
-
 }
-
 .contact h2 {
   font-size: 32px;
   margin-bottom: 5px;
@@ -24,8 +22,6 @@
   text-align: center; 
   max-width: 600px; /* Maximale Breite für den Text */
 }
-  
-
 /* Formular-Styling */
 .contact-form {
   display: flex;
@@ -36,7 +32,6 @@
   gap: 15px;
   margin-bottom: 60px; /* Abstand zu den Icons */
 }
-
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -46,7 +41,6 @@
   border-radius: 6px;
   resize: vertical;
 }
-
 .contact-form button {
   padding: 12px 24px;
   font-size: 18px;
@@ -57,11 +51,9 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .contact-form button:hover {
   background-color: darkgreen;
 }
-
 /* Kontakt-Infos unter dem Formular */
 .contact-info {
   display: flex;
@@ -69,7 +61,6 @@
   align-items: center;
   gap: 20px;
 }
-
 .contact-item {
   display: flex;
   align-items: center;
@@ -86,12 +77,9 @@
   border-radius: 5px;
   font-weight: bold;
 }
-
 .email-button:hover {
   background-color: #0056b3;
 }
-
-
 /* Responsive Layout */
 @media (min-width: 768px) {
   .contact-info {
@@ -99,12 +87,10 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-
   .contact-item {
     font-size: 20px;
   }
 }
-
 @media (max-width: 768px) {
   .contact-form {
     padding: 0 20px;
@@ -122,19 +108,15 @@
     flex-wrap: wrap;
     gap: 10px; /* Kleineren Abstand einstellen */
   }
-
   .contact-item {
     font-size: 14px; /* Icons und Text verkleinern */
     gap: 6px;
   }
-
   .contact-item svg {
     width: 16px; /* Kleinere Icons */
     height: 16px;
   }
-
   .contact-item p {
     font-size: 12px;
   }
-
 }

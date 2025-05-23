@@ -7,25 +7,18 @@
   padding: 50px 20px;
   max-width: 1200px;
   margin: auto;
-
 }
-
-
 .services-title {
   font-size: 28px;
   font-weight: bold;
-   /* Abstand zwischen Titel und Boxen */
 }
-
 .services-container {
   display: flex;
   flex-wrap: wrap; /* Falls auf kleinerem Bildschirm */
   justify-content: center;
   gap: 30px;
-  padding: 20px;
-  
+  padding: 20px;  
 }
-
 .service {
   display: flex;
   flex-direction: column;
@@ -37,9 +30,7 @@
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.8);
   width: 80%;
-  max-width: 350px;
-
-  
+  max-width: 350px; 
 }
 h4 {
   text-wrap: wrap;
@@ -51,7 +42,6 @@ h4 {
   flex-wrap: wrap; /* Verhindert Umbruch von Icon & Titel */
   justify-content: center; /* Titel wird immer mittig ausgerichtet */
 }
-
 .service-header h3 {
   margin: 0;
   font-size: 22px;
@@ -81,7 +71,6 @@ h4 {
   left: 50%;
   width: 100%;
 }
-
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -96,7 +85,6 @@ h4 {
   padding: 20px; /* sorgt für Abstand zum Rand */
   box-sizing: border-box;
 }
-
 .modal-content {
   background: white;
   padding: 25px;
@@ -165,4 +153,3 @@ h4 {
     width: 95%; /* Nutzt fast die gesamte Bildschirmbreite */
   } 
 }
-

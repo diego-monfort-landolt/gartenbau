@@ -1,4 +1,3 @@
-/* Hauptcontainer */
 .gartenpflege-section {
   position: relative;
   display: flex;
@@ -15,34 +14,29 @@
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
-
 /* Textbereich */
 .text-box {
   flex: 1;
   text-align: left;
 }
-
 .text-box h2 {
   font-size: 30px;
   font-weight: bold;
   color: #333;
   text-align: left;
 }
-
 .text-box p {
   font-size: 18px;
   color: #555;
   line-height: 1.6;
   text-align: left;
 }
-
 /* Bildbereich */
 .image-box {
   flex: 1;
   display: flex;
   justify-content: center;
 }
-
 .image-box img {
   max-width: 100%;
   height: auto;
@@ -50,7 +44,6 @@
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
-
 /* **Responsives Design für Mobile & Tablets** */
 @media (max-width: 768px) {
   .gartenpflege-section {
@@ -58,15 +51,12 @@
     text-align: center;
     padding: 40px 20px;
   }
-
   .text-box {
     text-align: center;
   }
-
   .image-box {
     width: 100%;
   }
-
   .image-box img {
     width: 90%;
   }

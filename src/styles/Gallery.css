@@ -5,16 +5,13 @@
   background-color: #fffbfb; /* Hellgrauer Hintergrund */
   width: 100%;
   margin: 0 auto;
- 
 }
-
 /* Titel Styling */
 .gallery-title {
   font-size: 32px;
   font-weight: bold;
   color: #333;
 }
-
 /* Für die Bilder in der Galerie */
 .gallery .image-gallery-slide img {
   width: 100%;
@@ -29,13 +26,11 @@
   .gallery .react-image-gallery {
     max-height: 350px;
   }
-
   /* Bilderhöhe für Tablets */
   .gallery .image-gallery-slide img {
     height: 180px; /* Etwas kleinere Höhe für Tablets */
   }
 }
-
 /* Mobile-Ansicht: 1 Bild pro Zeile */
 @media (max-width: 768px) {
    .gallery .image-gallery-slide img {
