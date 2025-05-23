@@ -8,30 +8,34 @@ const Contact = () => {
   const [showFallbackEmail, setShowFallbackEmail] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [emailError, setEmailError] = useState(false);
-
   useEffect(() => {
     const userAgent = navigator.userAgent;
     setIsMobile(/Mobi|Android/i.test(userAgent));
   }, []);
-
   const handleEmailClick = () => {
     const mailtoLink = `mailto:landoltdiego@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
 
-    // Versuche, E-Mail-Client zu öffnen
-    window.location.href = mailtoLink;
-
-    // Wenn nach 2 Sekunden nichts passiert ist, gehe von Desktop ohne Mailclient aus
-    if (!isMobile) {
+    if (isMobile) {
+      // Direkt öffnen auf Mobilgeräten
+      window.location.href = mailtoLink;
+    } else {
+      // Desktop: Simulierter Klick ohne Browser-Tab-Wechsel
+      const link = document.createElement("a");
+      link.href = mailtoLink;
+      link.style.display = "none";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      // Fallback nach 2 Sekunden anzeigen
       setTimeout(() => {
         setShowFallbackEmail(true);
-        setEmailError(true); // Unterdrückt Formular
+        setEmailError(true);
       }, 2000);
     }
-
+    // Formular zurücksetzen
     setSubject("");
     setMessage("");
   };
-
   return (
     <section id="contact" className="contact">
       <h2>Kontakt</h2>
@@ -43,11 +47,9 @@ const Contact = () => {
           <b>Kontaktieren Sie uns, wir freuen uns auf Sie und Ihren Garten! </b>
         </p>
       </div>
-
-      {/* Formular wird NUR angezeigt, wenn kein Fehler beim E-Mail-Versuch */}
+      {/* Formular wird nur angezeigt, wenn kein Fehler */}
       {!emailError && (
         <>
-          {/* Formsubmit.co Formular */}
           <form
             className="contact-form"
             action="https://formsubmit.co/landoltdiego@gmail.com"
@@ -61,12 +63,10 @@ const Contact = () => {
             <button type="submit">Nachricht senden</button>
             <input type="hidden" name="_next" value="https://diego-monfort-landolt.github.io/gartenbau/" />
           </form>
-
-          {/* Benutzerdefinierter mailto-Bereich */}
           <div className="contact-form">
             <input
               type="text"
-              placeholder="Betreff: "
+              placeholder="Betreff: test"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
               required
@@ -82,8 +82,7 @@ const Contact = () => {
           </div>
         </>
       )}
-
-      {/* Nur anzeigen wenn mailto scheitert */}
+      {/* Fallback E-Mail-Anzeige, wenn kein Mailprogramm gefunden */}
       {showFallbackEmail && (
         <div className="fallback-email" style={{ textAlign: "center", marginTop: "20px", color: "red" }}>
           <p>📧 Kein E-Mail-Programm erkannt?</p>
@@ -100,7 +99,6 @@ const Contact = () => {
           <p>Bitte kopieren und manuell versenden.</p>
         </div>
       )}
-
       {/* Kontaktinformationen immer sichtbar */}
       <div className="contact-info">
         <div className="contact-item">
@@ -119,5 +117,4 @@ const Contact = () => {
     </section>
   );
 };
-
 export default Contact;
