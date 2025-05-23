@@ -36,9 +36,7 @@ const GalleryComponent: React.FC = () => {
         slideInterval={4000}
         lazyLoad={true}
         /> 
-
     </section>
   );
 };
-
 export default GalleryComponent;
