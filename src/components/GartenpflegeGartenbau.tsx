@@ -21,5 +21,4 @@ const GartenpflegeGartenbau: React.FC = () => {
     </section>
   );
 };
-
 export default GartenpflegeGartenbau;
