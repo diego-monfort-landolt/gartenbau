@@ -21,7 +21,6 @@ const images = [
   { original: Foto7, thumbnail: Foto7, description: 'Plattenboden neu erstellt - J.Landolt Gartenbau GmbH' },
   { original: Foto8, thumbnail: Foto8, description: 'Plattenboden neu erstellt - J.Landolt Gartenbau GmbH' },
 ];
-
 const GalleryComponent: React.FC = () => {
   return (
     <section id='Gallery' className="gallery ">
