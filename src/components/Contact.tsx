@@ -17,9 +17,6 @@ const Contact = () => {
       <h2>Kontakt</h2>
       <div className="description-k">
         <p>
-          Jorge Landolt betreut sowohl kleine Privatgärten als auch großzügige Anlagen – individuell abgestimmt auf Ihre Wünsche und die Bedürfnisse der Pflanzen.
-          Denn nur durch regelmäßige Pflege bleibt Ihr Garten gesund, blühend und einladend – das ganze Jahr über.
-          <br />
           <b>Kontaktieren Sie uns, wir freuen uns auf Sie und Ihren Garten!</b>
         </p>
       </div>
@@ -64,7 +61,7 @@ const Contact = () => {
         </div>
         <div className="contact-item">
           <FaMapMarkerAlt size={20} />
-          <p>J. Landolt Gartenbau GmbH</p>
+          <p>Chlihölzliweg 5, 8185 Winkel</p>
         </div>
       </div>
     </section>

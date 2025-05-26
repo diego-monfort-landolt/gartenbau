@@ -1,5 +1,5 @@
 import "../styles/Header.css";
-import { FaMapMarkerAlt } from "react-icons/fa";
+// import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaWhatsapp, FaPhone  } from "react-icons/fa"
 
 const Header = () => (
@@ -7,7 +7,7 @@ const Header = () => (
     <div className="overlay">
       <h1>J. Landolt Gartenbau GmbH</h1>
       <div className="overlay-text">
-        <h2>Gartenbau & Gartenpflege</h2>
+        <h2>Gartenbau & Gartenpflege in Bülach und Umgebung</h2>
        <a href="tel:+41764197508" className="phone-button">
          <FaPhone 
             className="phone-icon" 
@@ -22,7 +22,7 @@ const Header = () => (
             className="whatsapp-button"
           ><FaWhatsapp className="whatsapp-icon" size={28} color="#25D366"  />
           </a>   
-        <p><FaMapMarkerAlt style={{ marginRight: '5px', transform: 'rotate(-15deg) ' }} />Bülach | Kloten | Rümlang</p>
+        {/* <p><FaMapMarkerAlt style={{ marginRight: '5px', transform: 'rotate(-15deg) ' }} />Bülach | Kloten | Rümlang</p> */}
       </div>
     </div>
   </header>
