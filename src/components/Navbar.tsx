@@ -42,7 +42,7 @@ const Navbar = () => {
       </button>
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
         <li onClick={handleLinkClick}><a href="#home">Home</a></li>
-        <li onClick={handleLinkClick}><a href="#about">Über uns</a></li>
+        <li onClick={handleLinkClick}><a href="#Dienstleistungen">Über uns</a></li>
         <li
           className={`dropdown ${isDropdownOpen ? "open" : ""}`}
           onClick={toggleDropdown}
