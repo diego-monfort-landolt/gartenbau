@@ -34,6 +34,7 @@ const Contact = () => {
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
+        <input type="email" name="email" placeholder="Ihre E-Mail" required />
         <input
           type="text"
           name="subject"
@@ -42,7 +43,7 @@ const Contact = () => {
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
         />
-        <input type="email" name="email" placeholder="Ihre E-Mail" required />
+        
         <textarea name="message" placeholder="Ihre Nachricht" rows={5} required />
         <button type="submit">Nachricht senden</button>
         <input type="hidden" name="_subject" value="Neue Anfrage" />

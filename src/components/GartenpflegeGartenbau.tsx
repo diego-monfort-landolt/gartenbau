@@ -1,28 +1,54 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import "../styles/GartenpflegeGartenbau.css";
 import BeispielBild from "../assets/img/schönerplattenboden.png";
 
 const GartenpflegeGartenbau: React.FC = () => {
   return (
-    <section id="Gartenbau" className="gartenpflege-section">
-      <div className="image-box">
-        <img src={BeispielBild} alt="Gartenpflege und Gartenbau Beispiel" />
-      </div>
-      <div className="text-box">
-        <h2>Gartenbau</h2>
-        <p>
-          Ein gepflegter Garten ist mehr als nur eine Außenfläche – er ist ein Rückzugsort, eine Wohlfühloase und ein lebendiges Naturerlebnis. Mit unserer fachkundigen Gartenpflege sorgen wir dafür, dass Ihre Grünflächen gesund und blühend bleiben – das ganze Jahr über. Ob regelmäßige Pflege, Rasen- und Heckenservice oder gezielte Maßnahmen zum Werterhalt – wir kümmern uns mit Erfahrung und Leidenschaft um jeden Bereich Ihres Gartens.
-        </p>
-        <h3>Warum Gartenpflege vom Fachbetrieb?</h3>
-        <p>
-        Eine regelmäßige und fachgerechte Gartenpflege schützt nicht nur Pflanzen und Boden, sondern steigert auch den langfristigen Wert Ihrer Immobilie. Als erfahrener Gartenbaubetrieb in Winkel arbeiten wir effizient, umweltschonend und mit hohem Qualitätsanspruch. Unser Ziel: Ein Garten, in dem Sie sich rundum wohlfühlen – zu jeder Jahreszeit.
-        </p>
-        <p>
-          Unsere Gartenbau-Dienstleistungen verwandeln Ihre Ideen in Wirklichkeit. Ob Neu- oder Umgestaltung, moderne oder natürliche Designs – wir planen und realisieren individuelle Gartenkonzepte nach Ihren Wünschen. Durch kreative Gestaltung, hochwertige Materialien und präzise Umsetzung schaffen wir stilvolle Außenbereiche, die Ästhetik und Funktionalität perfekt vereinen.
-          Lassen Sie Ihren Garten in neuem Glanz erstrahlen. <br/><b>Wir freuen uns auf Ihre Anfrage!</b>
-        </p>
-      </div>
-    </section>
+    <>
+      {/* SEO-Optimierung mit Helmet */}
+      <Helmet>
+        <title>Gartenbau & Gartenpflege in Bülach | Hochwertige Gartengestaltung</title>
+        <meta name="description" content="Gartenbau und Gartenpflege in Bülach. Hochwertige Materialien, individuelle Gestaltung und präzise Umsetzung für Ihren Traumgarten." />
+        <meta name="keywords" content="Gartenbau Bülach, Gartenpflege, Natursteinmauer, Plattenbeläge, Holzdecks, Landschaftsgestaltung" />
+        <meta property="og:title" content="Gartenbau & Gartenpflege in Bülach | Hochwertige Gartengestaltung" />
+        <meta property="og:description" content="Ihr Experte für Gartenbau und Gartenpflege in Bülach. Lassen Sie Ihren Garten in neuem Glanz erstrahlen!" />
+        <meta property="og:image" content={BeispielBild} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "J. Landolt Gartenbau GmbH",
+            "description": "Gartenbau und Gartenpflege in Bülach und Umgebung.",
+            "image": BeispielBild,
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Beispielstraße 1",
+              "addressLocality": "Bülach",
+              "addressCountry": "CH"
+            },
+            "telephone": "+41 76 419 75 08",
+            "email": "jorgelandolt@hotmail.com"
+          })}
+        </script>
+      </Helmet>
+
+      <section id="Gartenbau" className="gartenpflege-section">
+        <div className="image-box">
+          <img src={BeispielBild} alt="Hochwertige Gartenpflege und Gartenbau in Bülach – Natursteinmauer, Plattenbeläge & Holzdecks" />
+        </div>
+        <div className="text-box">
+          <h2>Gartenbau</h2>
+          <p>
+            Wir setzen auf Qualität und Genauigkeit. Wir stellen Ihr Gartenprojekt zuverlässig und zeitgerecht auf die Beine. <b>Wir verwenden hochwertige Materialien aus der Schweiz oder dem europäischen Raum.</b> 
+          </p>
+          <h3>Qualität und Präzision für Ihr Gartenprojekt</h3>
+          <p>
+            Grenzenlose Gestaltungsmöglichkeiten für Ihren Traumgarten: Ob Natursteinmauer, Plattenbeläge, Holzdecks oder üppige Staudenrabatten. Jeder Garten wird individuell gestaltet, angepasst an Ihre Wünsche und die Umgebung. Lassen Sie Ihrer Kreativität freien Lauf, wir setzen Ihre Ideen fachgerecht um!
+          </p>
+        </div>
+      </section>
+    </>
   );
 };
 export default GartenpflegeGartenbau;
