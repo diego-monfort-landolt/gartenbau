@@ -17,6 +17,7 @@ const Natursteinarbeiten: React.FC = () => {
           <br />
         </p>
         <p> Unser Leistungsspektrum im Bereich <strong>Natursteinarbeiten</strong> umfasst: <ul> <li>Terrassen aus Naturstein</li> <li>Natursteintreppen und Stufenanlagen</li> <li>Trockenmauern und Gartenmauern</li> <li>Wege und Einfahrten mit Natursteinpflaster</li> <li>Einfassungen, Palisaden und Zierobjekte</li> </ul> </p>
+        <h3>Verarbeitung von Naturstein</h3>
         <p> Durch die Kombination aus traditionellem Handwerk, hochwertigen Materialien und moderner Technik sorgen wir für präzise und langlebige Ergebnisse. Ob Sandstein, Granit, Basalt oder Schiefer – wir beraten Sie umfassend zur Auswahl des passenden Natursteins für Ihr Projekt.<br /> <b>Kontaktieren Sie uns für Ihre Natursteingestaltung!</b> </p>
       </div>
     </section>
