@@ -1,9 +1,22 @@
 import "../styles/Header.css";
+import { Helmet } from "react-helmet";
 // import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaWhatsapp, FaPhone  } from "react-icons/fa"
 
 const Header = () => (
-  <header id='home' className="header">
+
+  <>
+   <Helmet>
+      <title>Gartenbau & Gartenpflege in Bülach un Umgebung | J. Landolt Gartenbau GmbH</title>
+      <meta 
+        name="description" 
+        content="J. Landolt Gartenbau GmbH bietet professionelle Gartenpflege und Gartenbau in Bülach und Umgebung. Mit Leidenschaft gestalten und pflegen wir Gärten, Wohnsiedlungen und Parkanlagen. Lassen Sie sich von unserer Expertise in Natursteinarbeiten, Dachbegrünung und Gartengestaltung überzeugen!" 
+      />
+      <meta name="keywords" content="Gartenbau, Gartenpflege, Bülach, Kloten, Rümlang, Landschaftsgestaltung, Natursteinarbeiten, Dachbegrünung, Gartenplanung, Gärtner" />
+      <meta name="author" content="J. Landolt Gartenbau GmbH" />
+      <meta name="robots" content="index, follow" />
+    </Helmet>
+   <header id='home' className="header">
     <div className="overlay">
       <h1>J. Landolt Gartenbau GmbH</h1>
       <div className="overlay-text">
@@ -29,5 +42,7 @@ const Header = () => (
       </div>
     </div>
   </header>
+  </>
+ 
 );
 export default Header;
