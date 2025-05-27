@@ -5,6 +5,7 @@ import "../styles/Contact.css";
 const Contact = () => {
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
+  const [showImpressum, setShowImpressum] = useState(false); // NEW
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -12,6 +13,7 @@ const Contact = () => {
     (form.querySelector('input[name="_subject"]') as HTMLInputElement)!.value = `Neue Anfrage von ${name}`;
     form.submit();
   };
+
   return (
     <section id="contact" className="contact">
       <h2>Kontakt</h2>
@@ -43,14 +45,14 @@ const Contact = () => {
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
         />
-        
         <textarea name="message" placeholder="Ihre Nachricht" rows={5} required />
         <button type="submit">Nachricht senden</button>
         <input type="hidden" name="_subject" value="Neue Anfrage" />
         <input type="hidden" name="_replyto" value="{email}" />
-        <input type="hidden" name="_autoresponse" value="Danke für Ihre Nachricht! Wir melden uns so schnell Wie möglich. J. Landolt Gartenbau GmbH - jorgelandolt@hotmail.com - 076 419 75 08" />
+        <input type="hidden" name="_autoresponse" value="Danke für Ihre Nachricht! Wir melden uns so schnell wie möglich. J. Landolt Gartenbau GmbH - jorgelandolt@hotmail.com - 076 419 75 08" />
         <input type="hidden" name="_next" value="https://diego-monfort-landolt.github.io/gartenbau/" />
       </form>
+
       <div className="contact-info">
         <div className="contact-item">
           <FaPhone size={20} />
@@ -65,7 +67,38 @@ const Contact = () => {
           <p>Chlihölzliweg 5, 8185 Winkel</p>
         </div>
       </div>
+
+      {/* 👇 IMPRESSUM Toggle Section */}
+      <div className="impressum-section">
+        <button 
+          onClick={() => setShowImpressum(!showImpressum)} 
+          className="impressum-toggle"
+        >
+          {showImpressum ? "Impressum verbergen" : "Impressum anzeigen"}
+        </button>
+
+        {showImpressum && (
+          <div className="impressum-content">
+            <h3>Impressum</h3>
+            <p><strong>J. Landolt Gartenbau GmbH</strong></p>
+            <p>Chlihölzliweg 5</p>
+            <p>8185 Winkel, Schweiz</p>
+            <p>Telefon: 076 419 75 08</p>
+            <p>E-Mail: jorgelandolt@hotmail.com</p>
+            <p>Geschäftsführer: Jorge Landolt</p>
+            <p> Haftungsausschluss  
+                Die Inhalte unserer Seiten wurden mit grösster Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.  
+
+                Urheberrecht  
+                Die durch die Seitenbetreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem schweizerischen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung ausserhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.  
+
+                Datenschutz  
+                Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.</p>
+          </div>
+        )}
+      </div>
     </section>
   );
 };
+
 export default Contact;
