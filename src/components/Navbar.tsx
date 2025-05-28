@@ -49,7 +49,7 @@ const Navbar = () => {
           onMouseEnter={() => !isMobile && setIsDropdownOpen(true)}
           onMouseLeave={() => !isMobile && setIsDropdownOpen(false)}
         >
-          <a href="">Dienstleistungen <MdKeyboardArrowDown /></a>
+          <a href="#">Dienstleistungen <MdKeyboardArrowDown /></a>
           {isDropdownOpen && (
             <ul className="dropdown-menu">
               <li onClick={handleLinkClick}><a href="#Gartenbau">Gartenbau</a></li>
