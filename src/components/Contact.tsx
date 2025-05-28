@@ -49,8 +49,9 @@ const Contact = () => {
         <button type="submit">Nachricht senden</button>
         <input type="hidden" name="_subject" value="Neue Anfrage" />
         <input type="hidden" name="_replyto" value="{email}" />
-        <input type="hidden" name="_autoresponse" value="Danke für Ihre Nachricht! Wir melden uns so schnell wie möglich. J. Landolt Gartenbau GmbH - jorgelandolt@hotmail.com - 076 419 75 08" />
-        <input type="hidden" name="_next" value="https://diego-monfort-landolt.github.io/gartenbau/" />
+        <input type="hidden" name="_autoresponse" value="Vielen Dank für Ihre Nachricht! Wir werden uns so schnell wie möglich bei Ihnen melden.
+        J. Landolt Gartenbau GmbH 📧 jorgelandolt@hotmail.com 📞 076 419 75 08" />
+        <input type="hidden" name="_next" value="https://gartenbaulandolt.ch/" />
       </form>
 
       <div className="contact-info">

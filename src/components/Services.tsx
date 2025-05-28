@@ -13,7 +13,7 @@ const Services = () => {
         <meta property="og:title" content="Über uns | J. Landolt Gartenbau GmbH – Ihr Gärtner in Bülach" />
         <meta property="og:description" content="Seit 2015 steht J. Landolt Gartenbau GmbH für professionelle Gartengestaltung, individuelle Beratung und hochwertige Ausführung." />
       </Helmet>
-      <section id="Dienstleistungen" className="services">
+      <section id="ueberuns" className="services">
         <h2 className="services-title">Über uns</h2>
           <p className='descriton-gall'>
            Nach dem Abschluss der Lehre zum Landschaftsgärtner im 2011, habe ich meinen Traum einer eigenen Firma verwirklicht und 2015 die J. Landolt Gartenbau GmbH gegründet.  
