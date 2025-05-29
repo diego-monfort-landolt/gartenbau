@@ -2,7 +2,7 @@
 🌿 Ihr Gärtner für kreative Gartengestaltung
 Willkommen bei der Onepager-Website von J. Landolt Gartenbau GmbH – Ihrem Experten für Gartenbau, Gartenpflege und Natursteinarbeiten in Winkel und Umgebung. Diese Website dient als übersichtliche Präsentation unserer Dienstleistungen und erleichtert die Kontaktaufnahme für interessierte Kunden.
 
-www.gartenbaulandolt.ch
+https://gartenbaulandolt.ch
 
 ![alt text](image.png)
 
