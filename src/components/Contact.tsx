@@ -24,11 +24,11 @@ const Contact = () => {
       </div>
       <form
         className="contact-form"
-        action="https://formsubmit.co/jorgelandolt@hotmail.com"
+        action="https://formsubmit.co/landoltdiego@gmail.com"
         method="POST"
         onSubmit={handleSubmit}
       >
-        <input type="hidden" name="_cc" value="landoltdiego@gmail.com" />
+        <input type="hidden" name="_cc" value="jorgelandolt@hotmail.com" />
 
         <input
           type="text"
