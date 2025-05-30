@@ -24,7 +24,7 @@ const Contact = () => {
       </div>
       <form
         className="contact-form"
-        action="https://formsubmit.co/jorgelandolt@hotmail.com"
+        action="https://formsubmit.co/jorgelandolt@hotmail.com, landoltdiego@gmail.com"
         method="POST"
         onSubmit={handleSubmit}
       >
