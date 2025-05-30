@@ -28,7 +28,6 @@ const Contact = () => {
         method="POST"
         onSubmit={handleSubmit}
       >
-        <input type="hidden" name="_cc" value="jorgelandolt@hotmail.com" />
 
         <input
           type="text"
