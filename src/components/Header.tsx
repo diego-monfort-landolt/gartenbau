@@ -18,10 +18,10 @@ const Header = () => (
     </Helmet>
    <header id='home' className="header">
     <div className="overlay">
-      <h1>J. Landolt Gartenbau GmbH</h1>
+      <h2>J. Landolt Gartenbau GmbH</h2>
       <div className="overlay-text">
-        <h2>Gartenbau & Gartenpflege <br/> 
-        in Bülach und Umgebung</h2>
+        <h1>Gartenbau & Gartenpflege <br/> 
+        in Bülach und Umgebung</h1>
 
        <a href="tel:+41764197508" className="phone-button">
          <FaPhone 

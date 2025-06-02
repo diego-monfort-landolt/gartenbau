@@ -38,7 +38,7 @@ const GartenpflegeGartenbau: React.FC = () => {
           <img src={BeispielBild} alt="Hochwertige Gartenpflege und Gartenbau in Bülach – Natursteinmauer, Plattenbeläge & Holzdecks" />
         </div>
         <div className="text-box">
-          <h2>Gartenbau</h2>
+          <h1>Gartenbau</h1>
           <p>
             Wir setzen auf Qualität und Genauigkeit. Wir stellen Ihr Gartenprojekt zuverlässig und zeitgerecht auf die Beine. <b>Wir verwenden hochwertige Materialien aus der Schweiz oder dem europäischen Raum.</b> 
           </p>

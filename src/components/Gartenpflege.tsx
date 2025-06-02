@@ -21,7 +21,7 @@ const Gartenpflege: React.FC = () => {
         <img src={BeispielBild} alt="Gartenpflege und Gartenbau Beispiel" />
       </div>
       <div className="text-wrapper">
-        <h2>Gartenpflege</h2>
+        <h1>Gartenpflege</h1>
         <p>
          Unsere Stärken sind die Pflege von privaten Gärten, Wohnsiedlungen und Parkanlagen. Auch für Ihre Balkon-Bepflanzung oder Dachbegrünung sind wir die richtige Wahl.
           Wir übernehmen für Sie die Pflege Ihrer Pflanzen, als einmaligen Auftrag oder in wiederkehrenden Intervallen. Wir gehen Ihnen gern auch sporadisch zur Hand, wenn Ihnen die Zeit fehlt oder Sie andere Prioritäten setzen wollen.  

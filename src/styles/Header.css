@@ -45,7 +45,7 @@
   text-align: center;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-style: italic ;
   padding: 5px;
   text-align: center;
@@ -112,6 +112,9 @@ justify-content: center;
     object-fit: cover;
   }
   h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
     font-size: 1.5rem;
   }
   p {

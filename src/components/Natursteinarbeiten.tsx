@@ -30,7 +30,7 @@ const Natursteinarbeiten: React.FC = () => {
         <img src={NatursteinBild} alt="Beispiel für Natursteinarbeiten" />
       </div>
       <div className="text-wrapper">
-        <h2>Natursteinarbeiten</h2>
+        <h1>Natursteinarbeiten</h1>
         <p>
           Kein Baustoff ist so verschieden und interessant wie Naturstein. Bei der Verarbeitung ist Fachwissen gefragt, da keiner dem anderen gleicht, und die verschiedenen Gesteinsarten verschieden bearbeitet und verarbeitet werden. 
           Der Stein lebt - Nach Jahrmillionen aus dem Fels gehauen besticht der Naturstein mit einzigartigen Eigenschaften. Wind und Wetter ausgesetzt verändert er sich und bekommt eine einzigartige Patina. 
