@@ -21,6 +21,9 @@
   border-radius: 10px;
   background-color: white;
 }
+
+
+
 /* Responsive Anpassungen */
 @media (max-width: 1024px) {
   .gallery .react-image-gallery {

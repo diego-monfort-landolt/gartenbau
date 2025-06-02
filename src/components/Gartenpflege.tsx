@@ -10,7 +10,7 @@ const Gartenpflege: React.FC = () => {
         <title>Gartenpflege | J. Landolt Gartenbau GmbH</title>
         <meta 
           name="description" 
-          content="Professionelle Gartenpflege in Bülach und Umgebung. Wir gestalten und pflegen private Gärten, Wohnsiedlungen und Parkanlagen mit Leidenschaft und Expertise. Lassen Sie uns Ihre Balkon-Bepflanzung oder Dachbegrünung übernehmen. Kontaktieren Sie uns für eine individuelle Beratung! Landolt Gartenbau, Buelach, Kloten, Rümlang"
+          content="Professionelle Gartenpflege in Bülach und Umgebung. Wir gestalten und pflegen private Gärten, Wohnsiedlungen und Parkanlagen mit Leidenschaft und Expertise. Kontaktieren Sie uns für eine individuelle Beratung! Gartenbau Landolt, Buelach, Kloten, Rümlang"
         />
         <meta name="keywords" content="Gartenpflege, Gartenbau, Bülach, Garten gestalten, Parkanlagen, Dachbegrünung, Balkonbepflanzung, Pflanzenpflege" />
         <meta name="author" content="J. Landolt Gartenbau GmbH" />

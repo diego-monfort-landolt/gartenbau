@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import "../styles/GartenpflegeGartenbau.css";
-import BeispielBild from "../assets/img/schönerplattenboden.png";
+import BeispielBild from "../assets/img/gartenbau-landolt-buelach.jpeg";
 
 const GartenpflegeGartenbau: React.FC = () => {
   return (
@@ -14,6 +14,7 @@ const GartenpflegeGartenbau: React.FC = () => {
         <meta property="og:title" content="Gartenbau & Gartenpflege in Bülach | Hochwertige Gartengestaltung" />
         <meta property="og:description" content="Ihr Experte für Gartenbau und Gartenpflege in Bülach. Lassen Sie Ihren Garten in neuem Glanz erstrahlen!" />
         <meta property="og:image" content={BeispielBild} />
+         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -23,8 +24,8 @@ const GartenpflegeGartenbau: React.FC = () => {
             "image": BeispielBild,
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Beispielstraße 1",
-              "addressLocality": "Bülach",
+              "streetAddress": "Chlihölzliweg. 5",
+              "addressLocality": "Winkel",
               "addressCountry": "CH"
             },
             "telephone": "+41 76 419 75 08",
