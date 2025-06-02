@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import "../styles/GartenpflegeGartenbau.css";
-import BeispielBild from "../assets/img/gartenbau-landolt-buelach.jpeg";
+import BeispielBild from "../assets/img/Gartenpflege_hecke_büsche_rosen_wiese_rundumpacket_gartenpflege_Buelach.jpeg";
 
 const GartenpflegeGartenbau: React.FC = () => {
   return (
