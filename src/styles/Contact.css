@@ -130,24 +130,45 @@
   color: #333;
 }
  .contact-info {
-    flex-direction: row; /* Icons nebeneinander statt untereinander */
+    flex-direction: column; /* Icons nebeneinander statt untereinander */
     justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    gap: 10px; /* Kleineren Abstand einstellen */
+    gap: 2px;
   }
   .contact-item {
     font-size: 14px; /* Icons und Text verkleinern */
     gap: 6px;
   }
   .contact-item svg {
-    width: 16px; /* Kleinere Icons */
+    width: 16px; 
     height: 16px;
   }
   .contact-item p {
     font-size: 12px;
   }
-    .impressum-content {
+  .impressum-content {
     font-size: 0.85rem;
     padding: 0.8rem;
   }
+  .confirmation {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #25D366;
+  color: #000;
+  padding: 3px 5px;
+  border-radius: 8px;
+  font-size: 14px;
+  animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
 }

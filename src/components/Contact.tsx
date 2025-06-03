@@ -5,13 +5,24 @@ import "../styles/Contact.css";
 const Contact = () => {
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
-  const [showImpressum, setShowImpressum] = useState(false); // NEW
+  const [showImpressum, setShowImpressum] = useState(false); 
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const form = event.target as HTMLFormElement;
     (form.querySelector('input[name="_subject"]') as HTMLInputElement)!.value = `Neue Anfrage von ${name}`;
     form.submit();
+  };
+  const [copiedText, setCopiedText] = useState<string | null>(null);
+
+  const copyToClipboard = (text: string) => {
+    if (window.innerWidth <= 768) { // Nur im mobilen Modus
+      navigator.clipboard.writeText(text)
+        .then(() => setCopiedText(text)) // Bestätigung anzeigen
+        .catch(err => console.error("Fehler:", err));
+
+      setTimeout(() => setCopiedText(null), 2000); // Nach 2s ausblenden
+    }
   };
 
   return (
@@ -56,11 +67,11 @@ const Contact = () => {
       </form>
 
       <div className="contact-info">
-        <div className="contact-item">
+        <div className="contact-item" onClick={() => copyToClipboard("076 419 75 08")}>
           <FaPhone size={20} />
           <p>076 419 75 08</p>
         </div>
-        <div className="contact-item">
+        <div className="contact-item"  onClick={() => copyToClipboard("jorgelandolt@hotmail.com")}>
           <FaEnvelope size={20} />
           <p>jorgelandolt@hotmail.com</p>
         </div>
@@ -68,6 +79,12 @@ const Contact = () => {
           <FaMapMarkerAlt size={20} />
           <p>Chlihölzliweg 5, 8185 Winkel</p>
         </div>
+        {/* 🔹 Bestätigung für 2 Sekunden */}
+      {copiedText && (
+        <div className="confirmation">
+          <p>{copiedText} wurde kopiert!</p>
+        </div>
+      )}
       </div>
 
       {/* 👇 IMPRESSUM Toggle Section */}
