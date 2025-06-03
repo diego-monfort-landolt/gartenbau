@@ -19,6 +19,9 @@ import Foto04 from '../assets/img/Trennwand_garten_buelach_kloten_ruemlang_lando
 import Foto05 from '../assets/img/Natursteinboden_frischgelegt_buelach_gartenbau_gartenpflege_natursteine.jpeg';
 import Foto06 from '../assets/img/Wasserpflanzen_pflege_gartenpglege_gartenunterhalt_buelach_landolt_gartenbau_gmbh.jpeg';
 import Foto07 from '../assets/img/Gartenpflege_hecke_büsche_rosen_wiese_rundumpacket_gartenpflege_Buelach.jpeg';
+import Foto08 from '../assets/img/Pflastersteine_Natursteinarbeiten_buelach.jpeg';
+import Foto09 from '../assets/img/ausengarten_gartenbau_landolt_buelach.jpeg';
+import Foto10 from '../assets/img/gartenbau-landolt-buelach.jpeg';
 
 
 const images = [
@@ -38,6 +41,9 @@ const images = [
   { original: Foto05, thumbnail: Foto05, description: 'Harmonisch gestalteter Gartenplatz mit stilvollen Naturmaterialien – J. Landolt Gartenbau GmbH' },
   { original: Foto06, thumbnail: Foto06, description: 'Harmonische Wassergestaltung mit eleganten Wasserpflanzen – J. Landolt Gartenbau GmbH' },
   { original: Foto07, thumbnail: Foto07, description: 'Naturnahe Gartengestaltung – J. Landolt Gartenbau GmbH' },
+  { original: Foto08, thumbnail: Foto08, description: 'Pflastersteine – J. Landolt Gartenbau GmbH' },
+  { original: Foto09, thumbnail: Foto09, description: 'NeuBau - Rasen & Natursteinplatten  – J. Landolt Gartenbau GmbH' },
+  { original: Foto10, thumbnail: Foto10, description: 'Baumschnitt - Baumpflege – J. Landolt Gartenbau GmbH' },
 ];
 const GalleryComponent: React.FC = () => {
   return (
