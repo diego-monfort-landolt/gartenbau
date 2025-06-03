@@ -1,6 +1,7 @@
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { useState } from "react";
 import "../styles/Contact.css";
+import { FaCode } from "react-icons/fa6";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -79,6 +80,8 @@ const Contact = () => {
           <FaMapMarkerAlt size={20} />
           <p>Chlihölzliweg 5, 8185 Winkel</p>
         </div>
+        
+
         {/* 🔹 Bestätigung für 2 Sekunden */}
       {copiedText && (
         <div className="confirmation">
@@ -115,6 +118,7 @@ const Contact = () => {
                 Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.</p>
           </div>
         )}
+        <p className="Footer-TXT" onClick={() => {window.open("https://www.linkedin.com/in/diego-monfort-landolt/", "_blank");}}><FaCode size={20} color="#000" /> Website erstellt von Diego Landolt</p>
       </div>
     </section>
   );

@@ -84,7 +84,6 @@
   margin-top: 2rem;
   text-align: center;
 }
-
 .impressum-toggle {
   background: none;
   border: none;
@@ -94,7 +93,6 @@
   text-decoration: underline;
   padding: 0.5rem;
 }
-
 .impressum-content {
   margin-top: 1rem;
   font-size: 0.9rem;
@@ -107,6 +105,19 @@
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
+.Footer-TXT {
+  border-top: 1px solid blue;
+  border-bottom: 1px solid blue;
+  color:#000;
+  cursor: pointer;
+  background: radial-gradient(circle, rgba(0, 0, 255, 0.3) 0%, rgba(0, 0, 255, 0) 100%);
+  padding: 10px;
+  transition: background 0.3s ease-in-out;
+}
+.Footer-TXT:hover {
+  background: radial-gradient(circle, rgba(0, 0, 255, 0.5) 0%, rgba(0, 0, 255, 0) 100%);
+}
+
 /* Responsive Layout */
 @media (min-width: 768px) {
   .contact-info {
