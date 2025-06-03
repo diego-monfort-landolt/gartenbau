@@ -36,7 +36,7 @@ const Header = () => (
             target="_blank"
             rel="noopener noreferrer"
             className="whatsapp-button"
-          ><FaWhatsapp className="whatsapp-icon" size={30} color="#25D366"  />
+          ><FaWhatsapp className="whatsapp-icon" size={35} color="#25D366"  />
           </a>   
         {/* <p><FaMapMarkerAlt style={{ marginRight: '5px', transform: 'rotate(-15deg) ' }} />Bülach | Kloten | Rümlang</p> */}
         {/* <p>Ihr Experte für Gartenbau, Gartenpflege und Natursteinarbeiten.<br /><b>Individuell, stilvoll und nachhaltig</b> </p> */}
