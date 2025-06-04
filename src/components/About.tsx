@@ -11,7 +11,7 @@ const About = () => (
         Ihre Träume und Vorstellungen vereint mit unseren kreativen Ideen und unserer langjährigen Erfahrung schaffen Synergien für einzigartige Lebensräume mit Ausstrahlungskraft. Mit auserwählten Materialien und Pflanzen, unter Berücksichtigung der natürlichen Gegebenheiten Ihres Gartens, schenken wir ihm einen neuen Glanz. Zeitgemäss und stilvoll.<br/> <b>Ihr Gärtner in Bülach.</b></p><h2>Individuelle Gartenplanung mit persönlicher Beratung</h2>
       </div>
       <div className="image-box">
-        <img src={profielfoto} alt="Gartenbau" className="about-image" />
+        <img src={profielfoto} alt="Gärtner beim Baumschnitt in Bülach – professionelle Baumpflege und Gartenpflege vom Fachbetrieb - J.Landolt Gartenbau GmbH Winkel " className="about-image" />
       </div>
     </div>
     <p className="closing-text"></p>

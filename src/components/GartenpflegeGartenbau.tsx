@@ -9,7 +9,7 @@ const GartenpflegeGartenbau: React.FC = () => {
       {/* SEO-Optimierung mit Helmet */}
       <Helmet>
         <title>Gartenbau & Gartenpflege in Bülach | Hochwertige Gartengestaltung</title>
-        <meta name="description" content="Gartenbau und Gartenpflege in Bülach. Hochwertige Materialien, individuelle Gestaltung und präzise Umsetzung für Ihren Traumgarten." />
+        <meta name="description" content="Gartenbau und Gartenpflege in Bülach 🌿 Hochwertige Materialien, individuelle Gestaltung und präzise Umsetzung für Ihren Traumgarten." />
         <meta name="keywords" content="Gartenbau Bülach, Gartenpflege, Natursteinmauer, Plattenbeläge, Holzdecks, Landschaftsgestaltung" />
         <meta property="og:title" content="Gartenbau & Gartenpflege in Bülach | Hochwertige Gartengestaltung" />
         <meta property="og:description" content="Ihr Experte für Gartenbau und Gartenpflege in Bülach. Lassen Sie Ihren Garten in neuem Glanz erstrahlen!" />
@@ -36,7 +36,7 @@ const GartenpflegeGartenbau: React.FC = () => {
 
       <section id="Gartenbau" className="gartenpflege-section">
         <div className="image-box">
-          <img src={BeispielBild} alt="Hochwertige Gartenpflege und Gartenbau in Bülach – Natursteinmauer, Plattenbeläge & Holzdecks" />
+          <img src={BeispielBild} alt="Professionelle Gartenpflege in Bülach – fachgerechte Pflege von Grünflächen, Hecken und Pflanzen für einen gepflegten und gesunden Garten" />
         </div>
         <div className="text-box">
           <h1>Gartenbau</h1>

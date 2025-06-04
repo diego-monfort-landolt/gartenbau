@@ -18,7 +18,7 @@ const Gartenpflege: React.FC = () => {
       </Helmet>
    <section id="Gartenpflege" className="gartenpflege-container">
       <div className="image-wrapper">
-        <img src={BeispielBild} alt="Gartenpflege und Gartenbau Beispiel" />
+        <img src={BeispielBild} alt="Professionelle Gartenpflege und kreativer Gartenbau in Bülach – stilvoll gestaltete Grünflächen und Natursteinwege für eine harmonische Gartengestaltung🌿" />
       </div>
       <div className="text-wrapper">
         <h1>Gartenpflege</h1>

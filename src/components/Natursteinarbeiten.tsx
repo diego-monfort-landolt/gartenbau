@@ -28,7 +28,7 @@ const Natursteinarbeiten: React.FC = () => {
 
      <section id="Natursteinarbeiten" className="naturstein-container">
       <div className="image-wrapper">
-        <img src={NatursteinBild} alt="Beispiel für Natursteinarbeiten" />
+        <img src={NatursteinBild} alt="Hochwertige Natursteinarbeiten in Bülach – stilvolle Pflasterungen, Natursteinmauern und Wege für eine langlebige und ästhetische Gartengestaltung" />
       </div>
       <div className="text-wrapper">
         <h1>Natursteinarbeiten</h1>
