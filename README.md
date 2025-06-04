@@ -4,7 +4,8 @@ Willkommen bei der Onepager-Website von J. Landolt Gartenbau GmbH – Ihrem Expe
 
 https://gartenbaulandolt.ch
 
-![alt text](image.png)
+![Titel des Bildes](https://gartenbaulandolt.ch/assets/gartenbau-landolt-buelach-DVrqdW_n.jpeg)
+
 
 📌 Projektbeschreibung
 Dies ist eine Onepager-Website, die alle wichtigen Informationen kompakt und elegant auf einer einzigen Seite darstellt. Das moderne und minimalistische Design sorgt für eine übersichtliche Navigation und ermöglicht es Besuchern, sich schnell über unser Angebot zu informieren.
