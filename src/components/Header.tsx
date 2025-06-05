@@ -10,7 +10,7 @@ const Header = () => (
       <title>Gartenbau & Gartenpflege in Bülach un Umgebung | J. Landolt Gartenbau GmbH</title>
       <meta 
       name="description" 
-      content="J. Landolt Gartenbau GmbH – Ihr Experte für Gartenbau und Gartenpflege in Bülach und Umgebung. Kreative Gartengestaltung, Natursteinarbeiten und nachhaltige Pflege für stilvolle Außenbereiche." 
+      content="Gartenbau und Gartenpflege in Bülach und Umgebung - J. Landolt Gartenbau GmbH – Kreative Gartengestaltung, Natursteinarbeiten und nachhaltige Pflege für stilvolle Außenbereiche." 
       />
 
       <meta name="keywords" content="Gartenbau, Gartenpflege, Bülach, Kloten, Rümlang, Landschaftsgestaltung, Natursteinarbeiten, Dachbegrünung, Gartenplanung, Gärtner" />

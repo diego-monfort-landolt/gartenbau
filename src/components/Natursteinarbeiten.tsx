@@ -11,7 +11,7 @@ const Natursteinarbeiten: React.FC = () => {
         <title>Gartenbau & Gartenpflege in Bülach un Umgebung | Gartenbau mit Stil – J. Landolt Gartenbau GmbH</title>
         <meta 
             name="description" 
-            content="J. Landolt Gartenbau GmbH – Ihr Experte für Gartenbau & Gartenpflege in Bülach und Umgebung. Hochwertige Natursteinarbeiten, stilvolle Gartenwege, Terrassen und Treppen aus edlem Stein – für einen einzigartigen Außenbereich." 
+            content="Gartenbau & Gartenpflege in Bülach und Umgebung - J. Landolt Gartenbau GmbH – Hochwertige Natursteinarbeiten, stilvolle Gartenwege, Terrassen und Treppen aus edlem Stein – für einen einzigartigen Außenbereich." 
         />
 
         <meta 
