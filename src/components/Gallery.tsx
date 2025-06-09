@@ -120,7 +120,15 @@ const images = [
     thumbnailAlt: 'Baumpflege Gärtner Bülach'
   },
 ];
-const renderGalleryImage = (item: any) => {
+type GalleryImage = {
+  original?: string;
+  thumbnail?: string;
+  description?: string;
+  originalAlt?: string;
+  thumbnailAlt?: string;
+};
+
+const renderGalleryImage = (item: GalleryImage) => {
   return (
     <div className="image-gallery-image">
       <img
