@@ -13,7 +13,6 @@ const Natursteinarbeiten: React.FC = () => {
             name="description" 
             content="Gartenbau & Gartenpflege in Bülach und Umgebung - J. Landolt Gartenbau GmbH – Hochwertige Natursteinarbeiten, stilvolle Gartenwege, Terrassen und Treppen aus edlem Stein – für einen einzigartigen Außenbereich." 
         />
-
         <meta 
           name="keywords" 
           content="Natursteinarbeiten Bülach, Natursteinmauer bauen, Gartenwege aus Stein, Naturstein Terrasse, Gartenbau Bülach, Trockenmauern, Steintreppen, Pflasterarbeiten" 
@@ -25,7 +24,6 @@ const Natursteinarbeiten: React.FC = () => {
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="de_CH" />
     </Helmet>
-
      <section id="Natursteinarbeiten" className="naturstein-container">
       <div className="image-wrapper">
         <img src={NatursteinBild} alt="Hochwertige Natursteinarbeiten in Bülach – stilvolle Pflasterungen, Natursteinmauern und Wege für eine langlebige und ästhetische Gartengestaltung" />
