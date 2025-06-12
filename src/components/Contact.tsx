@@ -7,7 +7,6 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
   const [showImpressum, setShowImpressum] = useState(false); 
-
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const form = event.target as HTMLFormElement;
@@ -15,7 +14,6 @@ const Contact = () => {
     form.submit();
   };
   const [copiedText, setCopiedText] = useState<string | null>(null);
-
   const copyToClipboard = (text: string) => {
     if (window.innerWidth <= 768) { // Nur im mobilen Modus
       navigator.clipboard.writeText(text)
@@ -25,7 +23,6 @@ const Contact = () => {
       setTimeout(() => setCopiedText(null), 2000); // Nach 2s ausblenden
     }
   };
-
   return (
     <section id="contact" className="contact">
       <h2>Kontakt</h2>
@@ -40,7 +37,6 @@ const Contact = () => {
         method="POST"
         onSubmit={handleSubmit}
       >
-
         <input
           type="text"
           name="name"
@@ -66,7 +62,6 @@ const Contact = () => {
         J. Landolt Gartenbau GmbH 📧 jorgelandolt@hotmail.com 📞 076 419 75 08" />
         <input type="hidden" name="_next" value="https://gartenbaulandolt.ch/" />
       </form>
-
       <div className="contact-info">
         <div className="contact-item" onClick={() => copyToClipboard("076 419 75 08")}>
           <FaPhone size={20} />
@@ -80,8 +75,6 @@ const Contact = () => {
           <FaMapMarkerAlt size={20} />
           <p>Chlihölzliweg 5, 8185 Winkel</p>
         </div>
-        
-
         {/* 🔹 Bestätigung für 2 Sekunden */}
       {copiedText && (
         <div className="confirmation">
@@ -89,7 +82,6 @@ const Contact = () => {
         </div>
       )}
       </div>
-
       {/* 👇 IMPRESSUM Toggle Section */}
       <div className="impressum-section">
         <button 
@@ -98,7 +90,6 @@ const Contact = () => {
         >
           {showImpressum ? "Impressum verbergen" : "Impressum anzeigen"}
         </button>
-
         {showImpressum && (
           <div className="impressum-content">
             <h3>Impressum</h3>
@@ -123,5 +114,4 @@ const Contact = () => {
     </section>
   );
 };
-
 export default Contact;
