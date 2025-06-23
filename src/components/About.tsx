@@ -1,6 +1,5 @@
 import "../styles/About.css";
 import profielfoto from '../assets/img/Jorge Landolt - Ihr Gartenbauer in Bülach, Kloten & Rümlang.png';
-
 const About = () => (
   <section id="about" className="about-section">
     <div className="about-container">
