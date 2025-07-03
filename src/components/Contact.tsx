@@ -29,7 +29,7 @@ const Contact = () => {
       <div className="description-k">
         <p>
           <b>Kontaktieren Sie uns, wir freuen uns auf Sie und Ihren Garten!</b><br />
-          {/* <b style={{color: 'red'}}><b>Bitte vorübergehend die E-Mail-Adresse kopieren oder Anrufen, wir arbeiten an diesem Kontaktformular.</b></b> */}
+          <b style={{color: 'red'}}><b>Bitte vorübergehend die E-Mail-Adresse kopieren oder Anrufen, wir arbeiten an diesem Kontaktformular.</b></b>
         </p>
        
 
