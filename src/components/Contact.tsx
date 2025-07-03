@@ -28,7 +28,8 @@ const Contact = () => {
       <h2>Kontakt</h2>
       <div className="description-k">
         <p>
-          <b>Kontaktieren Sie uns, wir freuen uns auf Sie und Ihren Garten!</b>
+          <b>Kontaktieren Sie uns, wir freuen uns auf Sie und Ihren Garten!</b><br />
+          <b style={{color: 'red'}}><b>Bitte vorübergehend die E-Mail-Adresse kopieren oder Anrufen, wir arbeiten an diesem Kontaktformular.</b></b>
         </p>
       </div>
       <form
@@ -55,7 +56,7 @@ const Contact = () => {
           onChange={(e) => setSubject(e.target.value)}
         />
         <textarea name="message" placeholder="Ihre Nachricht" rows={5} required />
-        <button type="submit">Nachricht senden</button>
+        <button disabled type="submit">Nachricht senden</button>
         <input type="hidden" name="_subject" value="Neue Anfrage" />
         <input type="hidden" name="_replyto" value="{email}" />
         <input type="hidden" name="_autoresponse" value="Vielen Dank für Ihre Nachricht! Wir werden uns so schnell wie möglich bei Ihnen melden.
